@@ -11,7 +11,7 @@ This is the code related to "Semantic-Aware Domain Generalized Segmentation" (CV
 If you find it helpful to your research, please cite as follows:
 
 ```
-@inproceedings{peng2021sparse,
+@inproceedings{peng2022semantic,
   title={Semantic-Aware Domain Generalized Segmentation},
   author={Peng, Duo and Lei, Yinjie and Hayat, Munawar and Guo, Yulan and Li, Wen},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
