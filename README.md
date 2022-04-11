@@ -1,5 +1,8 @@
 # Semantic-Aware Domain Generalized Segmentation
 This is the code related to "Semantic-Aware Domain Generalized Segmentation" (CVPR 2022)
+<p align='center'>
+  <img src='overview.jpg' width="1000px">
+</p>
 
 ## 1. Paper
 [Semantic-Aware Domain Generalized Segmentation](https://arxiv.org/abs/2204.00822)  
