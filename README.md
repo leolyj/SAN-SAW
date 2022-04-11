@@ -2,17 +2,17 @@
 This is the code related to "Semantic-Aware Domain Generalized Segmentation" (CVPR 2022)
 
 ## 1. Paper
-[Sparse-to-dense Feature Matching: Intra and Inter domain Cross-modal Learning in Domain Adaptation for 3D Semantic Segmentation](https://arxiv.org/abs/2107.14724)  
-**IEEE International Conference on Computer Vision (ICCV 2021)**
+[Semantic-Aware Domain Generalized Segmentation](https://arxiv.org/abs/2204.00822)  
+**IEEE/CVF Computer Vision and Pattern Recognition (CVPR 2022)**
 
 If you find it helpful to your research, please cite as follows:
 
 ```
 @inproceedings{peng2021sparse,
-  title={Sparse-to-dense Feature Matching: Intra and Inter domain Cross-modal Learning in Domain Adaptation for 3D Semantic Segmentation},
-  author={Peng, Duo and Lei, Yinjie and Li, Wen and Zhang, Pingping and Guo, Yulan},
-  booktitle={Proceedings of the International Conference on Computer Vision (ICCV)},
-  year={2021},
+  title={Semantic-Aware Domain Generalized Segmentation},
+  author={Peng, Duo and Lei, Yinjie and Hayat, Munawar and Guo, Yulan and Li, Wen},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022},
   publisher={IEEE}
 }
 ```
