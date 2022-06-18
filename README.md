@@ -45,14 +45,10 @@ train.py
 
 
 ```
-arg_parser.add_argument('--data_root_path', type=str, default='XXX') #Training data path:
-```
+arg_parser.add_argument('--data_root_path', type=str, default='XXX')  # Training data path
 
-```
-arg_parser.add_argument('--list_path', type=str, default='XXX') #Training data list path:
-```
+arg_parser.add_argument('--list_path', type=str, default='XXX')  # Training data list path
 
-```
-arg_parser.add_argument('--val_dataset', type=str, default='XXX') #Validation/Testing data path:
+arg_parser.add_argument('--val_dataset', type=str, default='XXX')  # Validation/Testing data path
 ```
 
