@@ -40,7 +40,9 @@ You can directly training the network within the following python file by using 
 ```
 train.py
 ```
-We present the demo on GTAV to Cityscapes, other Settings can be implemented by converting the following args. (Except for the GTAV training set we use 640×640 resolution, all Settings are consistent with [**RobustNet**](https://github.com/shachoi/RobustNet), including dataloader, dataset partitioning etc).
+### We present the demo on GTAV to Cityscapes, other Settings can be implemented by converting the following args. 
+(Except for the GTAV training set we use 640×640 resolution, all Settings are consistent with [**RobustNet**](https://github.com/shachoi/RobustNet), including dataloader, dataset partitioning etc).
+
 Training data path:
 ```
 arg_parser.add_argument('--data_root_path', type=str, default='XXX')
