@@ -25,5 +25,17 @@ If you find it helpful to your research, please cite as follows:
 * CUDA 11.1
 * Python 3.7.9
 * Torchvision 0.8.2
+* Download [**the model**](http://vllab.ucmerced.edu/ytsai/CVPR18/DeepLab_resnet_pretrained_init-f81d91e8.pth) pretrained on ImageNet. Put it into each file named as  (pretianed_model).
 
-A PyTorch implementation of SAN and SAW. (coming soon!)
+
+## 3. Datasets
+- Download [**GTA5 datasets**](https://download.visinf.tu-darmstadt.de/data/from_games/).
+- Download [**SYNTHIA**](http://synthia-dataset.net/download/808/). 
+- Download [**Cityscapes**](https://www.cityscapes-dataset.com/). 
+- Download [**BDDS**](https://doc.bdd100k.com/download.html).
+- Download [**Mapillary**](https://www.mapillary.com/datasets).
+
+## 4. Usage
+Except for the GTAV training set we use 640×640 resolution, all Settings are consistent with [**RobustNet**](https://github.com/shachoi/RobustNet) (including dataloader, dataset partitioning etc).
+
+
