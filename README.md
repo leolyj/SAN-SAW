@@ -51,4 +51,7 @@ arg_parser.add_argument('--list_path', type=str, default='XXX')  # Training data
 
 arg_parser.add_argument('--val_dataset', type=str, default='XXX')  # Validation/Testing data path
 ```
-
+We present the demo on ResNet50. You can change the backbone by converting the following args.
+```
+arg_parser.add_argument('--backbone', type=str, default='XXX')  # Network Backbone
+```
