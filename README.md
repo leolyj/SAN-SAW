@@ -62,4 +62,4 @@ arg_parser.add_argument('--backbone', type=str, default='XXX')  # Network Backbo
 </p>
 
 ### update status
-2022/6/19 updates.
+The code (V1) is uploaded. (2022-06-19)
