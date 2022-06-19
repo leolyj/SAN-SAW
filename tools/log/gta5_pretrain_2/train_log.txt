@@ -1,0 +1,1832 @@
+
+2021-10-20 09:16:48,611 - root - INFO - Global configuration as follows:
+2021-10-20 09:16:48,611 - root - INFO - data_root_path   ../../DATASETS/datasets_seg/GTA5
+2021-10-20 09:16:48,611 - root - INFO - list_path        ../datasets/GTA_640/list
+2021-10-20 09:16:48,612 - root - INFO - checkpoint_dir   ./log/gta5_pretrain_2
+2021-10-20 09:16:48,612 - root - INFO - xuanran_path     None
+2021-10-20 09:16:48,612 - root - INFO - weight_loss      True
+2021-10-20 09:16:48,612 - root - INFO - use_trained      False
+2021-10-20 09:16:48,612 - root - INFO - backbone         Deeplab50_CLASS_INW
+2021-10-20 09:16:48,612 - root - INFO - bn_momentum      0.1
+2021-10-20 09:16:48,613 - root - INFO - imagenet_pretrained True
+2021-10-20 09:16:48,613 - root - INFO - pretrained_ckpt_file None
+2021-10-20 09:16:48,613 - root - INFO - continue_training False
+2021-10-20 09:16:48,613 - root - INFO - show_num_images  2
+2021-10-20 09:16:48,613 - root - INFO - seed             12345
+2021-10-20 09:16:48,613 - root - INFO - gpu              0
+2021-10-20 09:16:48,613 - root - INFO - batch_size_per_gpu 2
+2021-10-20 09:16:48,614 - root - INFO - alpha            0.3
+2021-10-20 09:16:48,614 - root - INFO - dataset          gta5
+2021-10-20 09:16:48,614 - root - INFO - val_dataset      cityscapes
+2021-10-20 09:16:48,614 - root - INFO - base_size        (640, 640)
+2021-10-20 09:16:48,614 - root - INFO - crop_size        (640, 640)
+2021-10-20 09:16:48,614 - root - INFO - target_base_size (1024, 512)
+2021-10-20 09:16:48,615 - root - INFO - target_crop_size (1024, 512)
+2021-10-20 09:16:48,615 - root - INFO - num_classes      19
+2021-10-20 09:16:48,615 - root - INFO - data_loader_workers 1
+2021-10-20 09:16:48,615 - root - INFO - pin_memory       2
+2021-10-20 09:16:48,615 - root - INFO - split            train
+2021-10-20 09:16:48,615 - root - INFO - random_mirror    True
+2021-10-20 09:16:48,616 - root - INFO - random_crop      False
+2021-10-20 09:16:48,616 - root - INFO - resize           True
+2021-10-20 09:16:48,616 - root - INFO - gaussian_blur    True
+2021-10-20 09:16:48,616 - root - INFO - numpy_transform  True
+2021-10-20 09:16:48,616 - root - INFO - color_jitter     True
+2021-10-20 09:16:48,616 - root - INFO - freeze_bn        False
+2021-10-20 09:16:48,616 - root - INFO - optim            SGD
+2021-10-20 09:16:48,617 - root - INFO - momentum         0.9
+2021-10-20 09:16:48,617 - root - INFO - weight_decay     0.0005
+2021-10-20 09:16:48,617 - root - INFO - lr               0.0005
+2021-10-20 09:16:48,617 - root - INFO - iter_max         200000
+2021-10-20 09:16:48,617 - root - INFO - iter_stop        200000
+2021-10-20 09:16:48,617 - root - INFO - each_epoch_iters 1000
+2021-10-20 09:16:48,618 - root - INFO - poly_power       0.9
+2021-10-20 09:16:48,618 - root - INFO - classin_classes  [0, 10, 2, 1, 8]
+2021-10-20 09:16:48,618 - root - INFO - multi            False
+2021-10-20 09:16:48,618 - root - INFO - lambda_seg       0.1
+2021-10-20 09:16:48,618 - root - INFO - batch_size       2
+2021-10-20 09:16:48,618 - root - INFO - class_16         False
+2021-10-20 09:16:48,619 - root - INFO - class_13         False
+2021-10-20 09:16:48,619 - root - INFO - This model will run on GeForce RTX 3090
+2021-10-20 09:16:48,628 - root - INFO - Training one epoch...
+2021-10-20 09:21:44,622 - root - INFO - 
+Epoch:0, train PA1:0.7577832123421544, MPA1:0.2738198491248472, MIoU1:0.2163236712929837, FWIoU1:0.6227478089547938
+2021-10-20 09:21:44,625 - root - INFO - 
+validating one epoch...
+2021-10-20 09:22:49,928 - root - INFO - 
+Epoch:0.000,  PA1:0.757, MPA1:0.331, MIoU1:0.230, FWIoU1:0.638, PC:0.548
+2021-10-20 09:22:49,930 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 09:22:51,683 - root - INFO - Training one epoch...
+2021-10-20 09:27:48,493 - root - INFO - 
+Epoch:1, train PA1:0.8316871628535452, MPA1:0.3813328081335559, MIoU1:0.3140129356188081, FWIoU1:0.7248176284349401
+2021-10-20 09:27:48,495 - root - INFO - 
+validating one epoch...
+2021-10-20 09:28:53,767 - root - INFO - 
+Epoch:1.000,  PA1:0.804, MPA1:0.368, MIoU1:0.275, FWIoU1:0.693, PC:0.540
+2021-10-20 09:28:53,769 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 09:28:55,617 - root - INFO - Training one epoch...
+2021-10-20 09:33:52,419 - root - INFO - 
+Epoch:2, train PA1:0.8532134867396528, MPA1:0.44057064262525697, MIoU1:0.36730421233112187, FWIoU1:0.7557385939086885
+2021-10-20 09:33:52,421 - root - INFO - 
+validating one epoch...
+2021-10-20 09:34:57,623 - root - INFO - 
+Epoch:2.000,  PA1:0.735, MPA1:0.372, MIoU1:0.264, FWIoU1:0.617, PC:0.575
+2021-10-20 09:34:57,625 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 09:34:57,625 - root - INFO - => The best MIoU of val is 0.27490823129251285 at 2000
+2021-10-20 09:34:57,625 - root - INFO - Training one epoch...
+2021-10-20 09:39:55,342 - root - INFO - 
+Epoch:3, train PA1:0.8719135264304012, MPA1:0.4887724970113184, MIoU1:0.41341000276639844, FWIoU1:0.7842213552041615
+2021-10-20 09:39:55,345 - root - INFO - 
+validating one epoch...
+2021-10-20 09:41:00,499 - root - INFO - 
+Epoch:3.000,  PA1:0.810, MPA1:0.381, MIoU1:0.293, FWIoU1:0.697, PC:0.594
+2021-10-20 09:41:00,501 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 09:41:02,220 - root - INFO - Training one epoch...
+2021-10-20 09:45:59,078 - root - INFO - 
+Epoch:4, train PA1:0.8721021040188849, MPA1:0.5009008522692314, MIoU1:0.42474590257463957, FWIoU1:0.784083859248966
+2021-10-20 09:45:59,081 - root - INFO - 
+validating one epoch...
+2021-10-20 09:47:04,399 - root - INFO - 
+Epoch:4.000,  PA1:0.642, MPA1:0.387, MIoU1:0.255, FWIoU1:0.520, PC:0.499
+2021-10-20 09:47:04,402 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 09:47:04,403 - root - INFO - => The best MIoU of val is 0.29284650527541695 at 4000
+2021-10-20 09:47:04,403 - root - INFO - Training one epoch...
+2021-10-20 09:52:01,617 - root - INFO - 
+Epoch:5, train PA1:0.8750825734593477, MPA1:0.5261802444364182, MIoU1:0.4446537342902789, FWIoU1:0.7888072636107678
+2021-10-20 09:52:01,619 - root - INFO - 
+validating one epoch...
+2021-10-20 09:53:06,827 - root - INFO - 
+Epoch:5.000,  PA1:0.750, MPA1:0.432, MIoU1:0.285, FWIoU1:0.635, PC:0.486
+2021-10-20 09:53:06,829 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 09:53:06,829 - root - INFO - => The best MIoU of val is 0.29284650527541695 at 4000
+2021-10-20 09:53:06,829 - root - INFO - Training one epoch...
+2021-10-20 09:58:04,204 - root - INFO - 
+Epoch:6, train PA1:0.8862726273538911, MPA1:0.5672196691035003, MIoU1:0.4841490248651446, FWIoU1:0.8052596090343253
+2021-10-20 09:58:04,207 - root - INFO - 
+validating one epoch...
+2021-10-20 09:59:09,432 - root - INFO - 
+Epoch:6.000,  PA1:0.762, MPA1:0.380, MIoU1:0.283, FWIoU1:0.642, PC:0.552
+2021-10-20 09:59:09,433 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 09:59:09,433 - root - INFO - => The best MIoU of val is 0.29284650527541695 at 4000
+2021-10-20 09:59:09,433 - root - INFO - Training one epoch...
+2021-10-20 10:04:07,117 - root - INFO - 
+Epoch:7, train PA1:0.892139526514695, MPA1:0.5756077515554656, MIoU1:0.4915820180518234, FWIoU1:0.8150541893463805
+2021-10-20 10:04:07,119 - root - INFO - 
+validating one epoch...
+2021-10-20 10:05:12,268 - root - INFO - 
+Epoch:7.000,  PA1:0.806, MPA1:0.423, MIoU1:0.306, FWIoU1:0.703, PC:0.545
+2021-10-20 10:05:12,270 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 10:05:14,149 - root - INFO - Training one epoch...
+2021-10-20 10:10:11,531 - root - INFO - 
+Epoch:8, train PA1:0.8935649210463726, MPA1:0.5823955201217924, MIoU1:0.49809717644267326, FWIoU1:0.8173923970568081
+2021-10-20 10:10:11,533 - root - INFO - 
+validating one epoch...
+2021-10-20 10:11:16,724 - root - INFO - 
+Epoch:8.000,  PA1:0.730, MPA1:0.418, MIoU1:0.287, FWIoU1:0.616, PC:0.533
+2021-10-20 10:11:16,725 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 10:11:16,725 - root - INFO - => The best MIoU of val is 0.306363916631066 at 8000
+2021-10-20 10:11:16,726 - root - INFO - Training one epoch...
+2021-10-20 10:16:13,904 - root - INFO - 
+Epoch:9, train PA1:0.8985435432768207, MPA1:0.5882960789586403, MIoU1:0.5035072922951287, FWIoU1:0.8252310969370082
+2021-10-20 10:16:13,907 - root - INFO - 
+validating one epoch...
+2021-10-20 10:17:19,113 - root - INFO - 
+Epoch:9.000,  PA1:0.697, MPA1:0.394, MIoU1:0.273, FWIoU1:0.567, PC:0.538
+2021-10-20 10:17:19,114 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 10:17:19,115 - root - INFO - => The best MIoU of val is 0.306363916631066 at 8000
+2021-10-20 10:17:19,115 - root - INFO - Training one epoch...
+2021-10-20 10:22:16,893 - root - INFO - 
+Epoch:10, train PA1:0.9043752024397407, MPA1:0.6234070272895693, MIoU1:0.5409461686961586, FWIoU1:0.8338505753828224
+2021-10-20 10:22:16,896 - root - INFO - 
+validating one epoch...
+2021-10-20 10:23:22,156 - root - INFO - 
+Epoch:10.000,  PA1:0.775, MPA1:0.422, MIoU1:0.313, FWIoU1:0.667, PC:0.549
+2021-10-20 10:23:22,158 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 10:23:24,038 - root - INFO - Training one epoch...
+2021-10-20 10:28:22,352 - root - INFO - 
+Epoch:11, train PA1:0.8965662031629221, MPA1:0.6140742802835829, MIoU1:0.5267460476402954, FWIoU1:0.8213245200036592
+2021-10-20 10:28:22,355 - root - INFO - 
+validating one epoch...
+2021-10-20 10:29:27,700 - root - INFO - 
+Epoch:11.000,  PA1:0.784, MPA1:0.422, MIoU1:0.311, FWIoU1:0.675, PC:0.573
+2021-10-20 10:29:27,702 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 10:29:27,702 - root - INFO - => The best MIoU of val is 0.31347575434354 at 11000
+2021-10-20 10:29:27,702 - root - INFO - Training one epoch...
+2021-10-20 10:34:25,719 - root - INFO - 
+Epoch:12, train PA1:0.904692066149982, MPA1:0.6228468964583417, MIoU1:0.5378215032635856, FWIoU1:0.8345996243124452
+2021-10-20 10:34:25,721 - root - INFO - 
+validating one epoch...
+2021-10-20 10:35:31,088 - root - INFO - 
+Epoch:12.000,  PA1:0.753, MPA1:0.423, MIoU1:0.314, FWIoU1:0.644, PC:0.578
+2021-10-20 10:35:31,089 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 10:35:32,892 - root - INFO - Training one epoch...
+2021-10-20 10:40:30,884 - root - INFO - 
+Epoch:13, train PA1:0.9048827925416787, MPA1:0.6346110902230917, MIoU1:0.5497856978317068, FWIoU1:0.8347370306115726
+2021-10-20 10:40:30,886 - root - INFO - 
+validating one epoch...
+2021-10-20 10:41:36,161 - root - INFO - 
+Epoch:13.000,  PA1:0.733, MPA1:0.443, MIoU1:0.307, FWIoU1:0.615, PC:0.546
+2021-10-20 10:41:36,163 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 10:41:36,163 - root - INFO - => The best MIoU of val is 0.3139954009363843 at 13000
+2021-10-20 10:41:36,163 - root - INFO - Training one epoch...
+2021-10-20 10:46:34,238 - root - INFO - 
+Epoch:14, train PA1:0.9084693000400587, MPA1:0.6511300526472382, MIoU1:0.5647445972776347, FWIoU1:0.8400162794393841
+2021-10-20 10:46:34,241 - root - INFO - 
+validating one epoch...
+2021-10-20 10:47:39,555 - root - INFO - 
+Epoch:14.000,  PA1:0.808, MPA1:0.450, MIoU1:0.336, FWIoU1:0.706, PC:0.578
+2021-10-20 10:47:39,557 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 10:47:41,419 - root - INFO - Training one epoch...
+2021-10-20 10:52:39,278 - root - INFO - 
+Epoch:15, train PA1:0.90482657945823, MPA1:0.6436599900151643, MIoU1:0.5535479261800957, FWIoU1:0.8348284697232239
+2021-10-20 10:52:39,281 - root - INFO - 
+validating one epoch...
+2021-10-20 10:53:44,574 - root - INFO - 
+Epoch:15.000,  PA1:0.795, MPA1:0.441, MIoU1:0.336, FWIoU1:0.684, PC:0.572
+2021-10-20 10:53:44,575 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 10:53:46,470 - root - INFO - Training one epoch...
+2021-10-20 10:58:44,009 - root - INFO - 
+Epoch:16, train PA1:0.9116473971956354, MPA1:0.6692641433050176, MIoU1:0.5801983989791609, FWIoU1:0.8452902961147155
+2021-10-20 10:58:44,012 - root - INFO - 
+validating one epoch...
+2021-10-20 10:59:49,242 - root - INFO - 
+Epoch:16.000,  PA1:0.788, MPA1:0.447, MIoU1:0.329, FWIoU1:0.682, PC:0.600
+2021-10-20 10:59:49,244 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 10:59:49,244 - root - INFO - => The best MIoU of val is 0.33598113343814723 at 16000
+2021-10-20 10:59:49,245 - root - INFO - Training one epoch...
+2021-10-20 11:04:47,101 - root - INFO - 
+Epoch:17, train PA1:0.9107015320725066, MPA1:0.662204824109712, MIoU1:0.5728542344225509, FWIoU1:0.8438855217604474
+2021-10-20 11:04:47,104 - root - INFO - 
+validating one epoch...
+2021-10-20 11:05:52,362 - root - INFO - 
+Epoch:17.000,  PA1:0.722, MPA1:0.448, MIoU1:0.331, FWIoU1:0.618, PC:0.607
+2021-10-20 11:05:52,364 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 11:05:52,364 - root - INFO - => The best MIoU of val is 0.33598113343814723 at 16000
+2021-10-20 11:05:52,365 - root - INFO - Training one epoch...
+2021-10-20 11:10:50,283 - root - INFO - 
+Epoch:18, train PA1:0.9129605410457424, MPA1:0.6656337588456237, MIoU1:0.5772132943352448, FWIoU1:0.8478963664593012
+2021-10-20 11:10:50,288 - root - INFO - 
+validating one epoch...
+2021-10-20 11:11:55,592 - root - INFO - 
+Epoch:18.000,  PA1:0.689, MPA1:0.453, MIoU1:0.325, FWIoU1:0.582, PC:0.590
+2021-10-20 11:11:55,594 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 11:11:55,594 - root - INFO - => The best MIoU of val is 0.33598113343814723 at 16000
+2021-10-20 11:11:55,594 - root - INFO - Training one epoch...
+2021-10-20 11:16:53,286 - root - INFO - 
+Epoch:19, train PA1:0.9132798038320931, MPA1:0.6860499201110635, MIoU1:0.5956307509600524, FWIoU1:0.8476960251291747
+2021-10-20 11:16:53,289 - root - INFO - 
+validating one epoch...
+2021-10-20 11:17:58,495 - root - INFO - 
+Epoch:19.000,  PA1:0.692, MPA1:0.444, MIoU1:0.329, FWIoU1:0.583, PC:0.589
+2021-10-20 11:17:58,496 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 11:17:58,496 - root - INFO - => The best MIoU of val is 0.33598113343814723 at 16000
+2021-10-20 11:17:58,497 - root - INFO - Training one epoch...
+2021-10-20 11:22:55,791 - root - INFO - 
+Epoch:20, train PA1:0.9124690168174312, MPA1:0.6836980810872414, MIoU1:0.5933376468799016, FWIoU1:0.8467648123020023
+2021-10-20 11:22:55,793 - root - INFO - 
+validating one epoch...
+2021-10-20 11:24:00,958 - root - INFO - 
+Epoch:20.000,  PA1:0.811, MPA1:0.470, MIoU1:0.344, FWIoU1:0.706, PC:0.540
+2021-10-20 11:24:00,960 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 11:24:02,723 - root - INFO - Training one epoch...
+2021-10-20 11:29:00,714 - root - INFO - 
+Epoch:21, train PA1:0.9153567829952212, MPA1:0.6820105674448413, MIoU1:0.5947529624532875, FWIoU1:0.8511414069120581
+2021-10-20 11:29:00,717 - root - INFO - 
+validating one epoch...
+2021-10-20 11:30:05,973 - root - INFO - 
+Epoch:21.000,  PA1:0.811, MPA1:0.450, MIoU1:0.331, FWIoU1:0.706, PC:0.574
+2021-10-20 11:30:05,975 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 11:30:05,975 - root - INFO - => The best MIoU of val is 0.34424314746221163 at 21000
+2021-10-20 11:30:05,975 - root - INFO - Training one epoch...
+2021-10-20 11:35:03,542 - root - INFO - 
+Epoch:22, train PA1:0.9190694192668079, MPA1:0.6947542097267044, MIoU1:0.6069584740827995, FWIoU1:0.8574809816849138
+2021-10-20 11:35:03,545 - root - INFO - 
+validating one epoch...
+2021-10-20 11:36:08,894 - root - INFO - 
+Epoch:22.000,  PA1:0.729, MPA1:0.438, MIoU1:0.316, FWIoU1:0.607, PC:0.559
+2021-10-20 11:36:08,895 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 11:36:08,896 - root - INFO - => The best MIoU of val is 0.34424314746221163 at 21000
+2021-10-20 11:36:08,898 - root - INFO - Training one epoch...
+2021-10-20 11:41:07,176 - root - INFO - 
+Epoch:23, train PA1:0.9184700756156999, MPA1:0.6876782686737283, MIoU1:0.5996132080432933, FWIoU1:0.856255224204985
+2021-10-20 11:41:07,179 - root - INFO - 
+validating one epoch...
+2021-10-20 11:42:12,370 - root - INFO - 
+Epoch:23.000,  PA1:0.783, MPA1:0.487, MIoU1:0.351, FWIoU1:0.685, PC:0.583
+2021-10-20 11:42:12,372 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 11:42:14,105 - root - INFO - Training one epoch...
+2021-10-20 11:47:11,943 - root - INFO - 
+Epoch:24, train PA1:0.9179162832487351, MPA1:0.6936622768813596, MIoU1:0.6052392221197744, FWIoU1:0.8552237291441144
+2021-10-20 11:47:11,945 - root - INFO - 
+validating one epoch...
+2021-10-20 11:48:17,237 - root - INFO - 
+Epoch:24.000,  PA1:0.704, MPA1:0.450, MIoU1:0.314, FWIoU1:0.584, PC:0.569
+2021-10-20 11:48:17,239 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 11:48:17,239 - root - INFO - => The best MIoU of val is 0.3514769861565611 at 24000
+2021-10-20 11:48:17,239 - root - INFO - Training one epoch...
+2021-10-20 11:53:14,999 - root - INFO - 
+Epoch:25, train PA1:0.9208815423057005, MPA1:0.6885293863532971, MIoU1:0.6028628932847734, FWIoU1:0.8602730320655229
+2021-10-20 11:53:15,001 - root - INFO - 
+validating one epoch...
+2021-10-20 11:54:20,270 - root - INFO - 
+Epoch:25.000,  PA1:0.788, MPA1:0.455, MIoU1:0.341, FWIoU1:0.683, PC:0.614
+2021-10-20 11:54:20,271 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 11:54:20,272 - root - INFO - => The best MIoU of val is 0.3514769861565611 at 24000
+2021-10-20 11:54:20,275 - root - INFO - Training one epoch...
+2021-10-20 11:59:17,553 - root - INFO - 
+Epoch:26, train PA1:0.9193962656003843, MPA1:0.7084469307436073, MIoU1:0.6207521149231833, FWIoU1:0.8573611267650983
+2021-10-20 11:59:17,555 - root - INFO - 
+validating one epoch...
+2021-10-20 12:00:22,884 - root - INFO - 
+Epoch:26.000,  PA1:0.719, MPA1:0.453, MIoU1:0.334, FWIoU1:0.607, PC:0.589
+2021-10-20 12:00:22,886 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:00:22,886 - root - INFO - => The best MIoU of val is 0.3514769861565611 at 24000
+2021-10-20 12:00:22,887 - root - INFO - Training one epoch...
+2021-10-20 12:05:20,504 - root - INFO - 
+Epoch:27, train PA1:0.918621753618109, MPA1:0.7158700909230029, MIoU1:0.6204974286499123, FWIoU1:0.8566479514059214
+2021-10-20 12:05:20,507 - root - INFO - 
+validating one epoch...
+2021-10-20 12:06:25,791 - root - INFO - 
+Epoch:27.000,  PA1:0.669, MPA1:0.443, MIoU1:0.308, FWIoU1:0.547, PC:0.549
+2021-10-20 12:06:25,792 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:06:25,792 - root - INFO - => The best MIoU of val is 0.3514769861565611 at 24000
+2021-10-20 12:06:25,793 - root - INFO - Training one epoch...
+2021-10-20 12:11:23,376 - root - INFO - 
+Epoch:28, train PA1:0.9212733481239879, MPA1:0.7120534626377467, MIoU1:0.6202545065156584, FWIoU1:0.8606914596022447
+2021-10-20 12:11:23,378 - root - INFO - 
+validating one epoch...
+2021-10-20 12:12:28,702 - root - INFO - 
+Epoch:28.000,  PA1:0.832, MPA1:0.469, MIoU1:0.362, FWIoU1:0.728, PC:0.614
+2021-10-20 12:12:28,703 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 12:12:30,427 - root - INFO - Training one epoch...
+2021-10-20 12:17:27,926 - root - INFO - 
+Epoch:29, train PA1:0.9166075872133815, MPA1:0.6928184864773945, MIoU1:0.6042683286218992, FWIoU1:0.8534042277283759
+2021-10-20 12:17:27,928 - root - INFO - 
+validating one epoch...
+2021-10-20 12:18:33,126 - root - INFO - 
+Epoch:29.000,  PA1:0.775, MPA1:0.505, MIoU1:0.356, FWIoU1:0.676, PC:0.577
+2021-10-20 12:18:33,126 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:18:33,126 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 12:18:33,127 - root - INFO - Training one epoch...
+2021-10-20 12:23:30,941 - root - INFO - 
+Epoch:30, train PA1:0.9202388302312001, MPA1:0.6938727856844744, MIoU1:0.6048659546897975, FWIoU1:0.8591897792007753
+2021-10-20 12:23:30,943 - root - INFO - 
+validating one epoch...
+2021-10-20 12:24:36,073 - root - INFO - 
+Epoch:30.000,  PA1:0.710, MPA1:0.476, MIoU1:0.329, FWIoU1:0.599, PC:0.596
+2021-10-20 12:24:36,074 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:24:36,075 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 12:24:36,075 - root - INFO - Training one epoch...
+2021-10-20 12:29:34,087 - root - INFO - 
+Epoch:31, train PA1:0.922399842063362, MPA1:0.7088113289488607, MIoU1:0.6197295766117032, FWIoU1:0.862456210738545
+2021-10-20 12:29:34,090 - root - INFO - 
+validating one epoch...
+2021-10-20 12:30:39,433 - root - INFO - 
+Epoch:31.000,  PA1:0.679, MPA1:0.466, MIoU1:0.327, FWIoU1:0.573, PC:0.556
+2021-10-20 12:30:39,435 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:30:39,435 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 12:30:39,436 - root - INFO - Training one epoch...
+2021-10-20 12:35:37,229 - root - INFO - 
+Epoch:32, train PA1:0.9212594214987944, MPA1:0.7225621334884504, MIoU1:0.6316758373981318, FWIoU1:0.8605633919614347
+2021-10-20 12:35:37,232 - root - INFO - 
+validating one epoch...
+2021-10-20 12:36:42,578 - root - INFO - 
+Epoch:32.000,  PA1:0.691, MPA1:0.425, MIoU1:0.323, FWIoU1:0.583, PC:0.605
+2021-10-20 12:36:42,580 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:36:42,580 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 12:36:42,580 - root - INFO - Training one epoch...
+2021-10-20 12:41:40,592 - root - INFO - 
+Epoch:33, train PA1:0.9232917362914421, MPA1:0.7228254996620368, MIoU1:0.6319543423335837, FWIoU1:0.8641282328109197
+2021-10-20 12:41:40,595 - root - INFO - 
+validating one epoch...
+2021-10-20 12:42:45,884 - root - INFO - 
+Epoch:33.000,  PA1:0.836, MPA1:0.468, MIoU1:0.358, FWIoU1:0.733, PC:0.590
+2021-10-20 12:42:45,885 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:42:45,885 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 12:42:45,885 - root - INFO - Training one epoch...
+2021-10-20 12:47:44,229 - root - INFO - 
+Epoch:34, train PA1:0.9246069368381079, MPA1:0.728586252066041, MIoU1:0.6397755325697516, FWIoU1:0.8662990302395499
+2021-10-20 12:47:44,232 - root - INFO - 
+validating one epoch...
+2021-10-20 12:48:49,550 - root - INFO - 
+Epoch:34.000,  PA1:0.783, MPA1:0.485, MIoU1:0.346, FWIoU1:0.690, PC:0.571
+2021-10-20 12:48:49,555 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:48:49,555 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 12:48:49,555 - root - INFO - Training one epoch...
+2021-10-20 12:53:48,413 - root - INFO - 
+Epoch:35, train PA1:0.9232900715330921, MPA1:0.7405858231354854, MIoU1:0.6482999668627786, FWIoU1:0.8636284327764414
+2021-10-20 12:53:48,415 - root - INFO - 
+validating one epoch...
+2021-10-20 12:54:53,748 - root - INFO - 
+Epoch:35.000,  PA1:0.714, MPA1:0.449, MIoU1:0.318, FWIoU1:0.606, PC:0.588
+2021-10-20 12:54:53,749 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 12:54:53,749 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 12:54:53,749 - root - INFO - Training one epoch...
+2021-10-20 12:59:52,547 - root - INFO - 
+Epoch:36, train PA1:0.9277633302036316, MPA1:0.7413950131272878, MIoU1:0.652759494073491, FWIoU1:0.8713725509226466
+2021-10-20 12:59:52,550 - root - INFO - 
+validating one epoch...
+2021-10-20 13:00:57,984 - root - INFO - 
+Epoch:36.000,  PA1:0.780, MPA1:0.440, MIoU1:0.322, FWIoU1:0.685, PC:0.581
+2021-10-20 13:00:57,986 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:00:57,986 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 13:00:57,986 - root - INFO - Training one epoch...
+2021-10-20 13:05:56,762 - root - INFO - 
+Epoch:37, train PA1:0.9248143677739913, MPA1:0.7419142476398966, MIoU1:0.6476112130002353, FWIoU1:0.8661767119677786
+2021-10-20 13:05:56,765 - root - INFO - 
+validating one epoch...
+2021-10-20 13:07:02,033 - root - INFO - 
+Epoch:37.000,  PA1:0.798, MPA1:0.460, MIoU1:0.336, FWIoU1:0.693, PC:0.572
+2021-10-20 13:07:02,035 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:07:02,035 - root - INFO - => The best MIoU of val is 0.36224964956989775 at 29000
+2021-10-20 13:07:02,035 - root - INFO - Training one epoch...
+2021-10-20 13:12:00,537 - root - INFO - 
+Epoch:38, train PA1:0.9265501934283902, MPA1:0.7200509226953266, MIoU1:0.6264488360063191, FWIoU1:0.8696779245060837
+2021-10-20 13:12:00,540 - root - INFO - 
+validating one epoch...
+2021-10-20 13:13:05,951 - root - INFO - 
+Epoch:38.000,  PA1:0.844, MPA1:0.475, MIoU1:0.366, FWIoU1:0.747, PC:0.627
+2021-10-20 13:13:05,953 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 13:13:07,703 - root - INFO - Training one epoch...
+2021-10-20 13:18:06,088 - root - INFO - 
+Epoch:39, train PA1:0.9272011420127432, MPA1:0.7176007141946195, MIoU1:0.6293509950249012, FWIoU1:0.8705762552643567
+2021-10-20 13:18:06,091 - root - INFO - 
+validating one epoch...
+2021-10-20 13:19:11,481 - root - INFO - 
+Epoch:39.000,  PA1:0.793, MPA1:0.466, MIoU1:0.344, FWIoU1:0.695, PC:0.632
+2021-10-20 13:19:11,482 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:19:11,482 - root - INFO - => The best MIoU of val is 0.36608008240936707 at 39000
+2021-10-20 13:19:11,482 - root - INFO - Training one epoch...
+2021-10-20 13:24:10,229 - root - INFO - 
+Epoch:40, train PA1:0.9257716777114516, MPA1:0.7443162630701594, MIoU1:0.652446363079657, FWIoU1:0.8680891803578734
+2021-10-20 13:24:10,232 - root - INFO - 
+validating one epoch...
+2021-10-20 13:25:15,447 - root - INFO - 
+Epoch:40.000,  PA1:0.756, MPA1:0.458, MIoU1:0.346, FWIoU1:0.654, PC:0.588
+2021-10-20 13:25:15,449 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:25:15,449 - root - INFO - => The best MIoU of val is 0.36608008240936707 at 39000
+2021-10-20 13:25:15,449 - root - INFO - Training one epoch...
+2021-10-20 13:30:13,948 - root - INFO - 
+Epoch:41, train PA1:0.9264204346493863, MPA1:0.7566321753191873, MIoU1:0.666931524473997, FWIoU1:0.869014655751476
+2021-10-20 13:30:13,951 - root - INFO - 
+validating one epoch...
+2021-10-20 13:31:19,162 - root - INFO - 
+Epoch:41.000,  PA1:0.853, MPA1:0.477, MIoU1:0.376, FWIoU1:0.757, PC:0.624
+2021-10-20 13:31:19,164 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 13:31:20,994 - root - INFO - Training one epoch...
+2021-10-20 13:36:19,589 - root - INFO - 
+Epoch:42, train PA1:0.9271685951301366, MPA1:0.7492942610168194, MIoU1:0.6592753551579261, FWIoU1:0.8704649293730957
+2021-10-20 13:36:19,591 - root - INFO - 
+validating one epoch...
+2021-10-20 13:37:24,845 - root - INFO - 
+Epoch:42.000,  PA1:0.782, MPA1:0.482, MIoU1:0.366, FWIoU1:0.678, PC:0.611
+2021-10-20 13:37:24,847 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:37:24,847 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 13:37:24,848 - root - INFO - Training one epoch...
+2021-10-20 13:42:23,147 - root - INFO - 
+Epoch:43, train PA1:0.9302607700788144, MPA1:0.7569805026108639, MIoU1:0.6636273776464979, FWIoU1:0.8753692437536083
+2021-10-20 13:42:23,150 - root - INFO - 
+validating one epoch...
+2021-10-20 13:43:28,345 - root - INFO - 
+Epoch:43.000,  PA1:0.823, MPA1:0.475, MIoU1:0.363, FWIoU1:0.728, PC:0.604
+2021-10-20 13:43:28,347 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:43:28,347 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 13:43:28,348 - root - INFO - Training one epoch...
+2021-10-20 13:48:27,434 - root - INFO - 
+Epoch:44, train PA1:0.9260052649610427, MPA1:0.7320826706398221, MIoU1:0.6435007654953053, FWIoU1:0.8687018304785764
+2021-10-20 13:48:27,436 - root - INFO - 
+validating one epoch...
+2021-10-20 13:49:32,706 - root - INFO - 
+Epoch:44.000,  PA1:0.674, MPA1:0.472, MIoU1:0.338, FWIoU1:0.576, PC:0.629
+2021-10-20 13:49:32,708 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:49:32,708 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 13:49:32,710 - root - INFO - Training one epoch...
+2021-10-20 13:54:27,229 - root - INFO - 
+Epoch:45, train PA1:0.9275595115817968, MPA1:0.7335533715701236, MIoU1:0.6423795771147722, FWIoU1:0.8711564248807965
+2021-10-20 13:54:27,232 - root - INFO - 
+validating one epoch...
+2021-10-20 13:55:32,492 - root - INFO - 
+Epoch:45.000,  PA1:0.846, MPA1:0.448, MIoU1:0.361, FWIoU1:0.747, PC:0.635
+2021-10-20 13:55:32,493 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 13:55:32,494 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 13:55:32,494 - root - INFO - Training one epoch...
+2021-10-20 14:00:25,402 - root - INFO - 
+Epoch:46, train PA1:0.9304378682376327, MPA1:0.7472104552430716, MIoU1:0.6616452556714841, FWIoU1:0.8757376051092336
+2021-10-20 14:00:25,404 - root - INFO - 
+validating one epoch...
+2021-10-20 14:01:30,702 - root - INFO - 
+Epoch:46.000,  PA1:0.740, MPA1:0.490, MIoU1:0.354, FWIoU1:0.638, PC:0.582
+2021-10-20 14:01:30,702 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:01:30,702 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:01:30,702 - root - INFO - Training one epoch...
+2021-10-20 14:06:23,091 - root - INFO - 
+Epoch:47, train PA1:0.9301534572425514, MPA1:0.7619770517788975, MIoU1:0.6672651346691554, FWIoU1:0.8752695321322782
+2021-10-20 14:06:23,093 - root - INFO - 
+validating one epoch...
+2021-10-20 14:07:28,279 - root - INFO - 
+Epoch:47.000,  PA1:0.796, MPA1:0.482, MIoU1:0.359, FWIoU1:0.701, PC:0.597
+2021-10-20 14:07:28,280 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:07:28,280 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:07:28,281 - root - INFO - Training one epoch...
+2021-10-20 14:12:20,632 - root - INFO - 
+Epoch:48, train PA1:0.929366136467112, MPA1:0.7548216723632514, MIoU1:0.6683512981161402, FWIoU1:0.8740744060928717
+2021-10-20 14:12:20,635 - root - INFO - 
+validating one epoch...
+2021-10-20 14:13:25,839 - root - INFO - 
+Epoch:48.000,  PA1:0.701, MPA1:0.472, MIoU1:0.349, FWIoU1:0.594, PC:0.586
+2021-10-20 14:13:25,841 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:13:25,841 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:13:25,842 - root - INFO - Training one epoch...
+2021-10-20 14:18:18,667 - root - INFO - 
+Epoch:49, train PA1:0.9291072732377761, MPA1:0.7629940932878504, MIoU1:0.6728401609044543, FWIoU1:0.8734129492003924
+2021-10-20 14:18:18,669 - root - INFO - 
+validating one epoch...
+2021-10-20 14:19:23,825 - root - INFO - 
+Epoch:49.000,  PA1:0.846, MPA1:0.466, MIoU1:0.374, FWIoU1:0.748, PC:0.663
+2021-10-20 14:19:23,826 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:19:23,826 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:19:23,827 - root - INFO - Training one epoch...
+2021-10-20 14:24:16,521 - root - INFO - 
+Epoch:50, train PA1:0.9334713765201123, MPA1:0.7576322302064332, MIoU1:0.6630587061207459, FWIoU1:0.8808070697927617
+2021-10-20 14:24:16,524 - root - INFO - 
+validating one epoch...
+2021-10-20 14:25:21,793 - root - INFO - 
+Epoch:50.000,  PA1:0.698, MPA1:0.481, MIoU1:0.342, FWIoU1:0.594, PC:0.576
+2021-10-20 14:25:21,795 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:25:21,795 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:25:21,795 - root - INFO - Training one epoch...
+2021-10-20 14:30:14,454 - root - INFO - 
+Epoch:51, train PA1:0.9314306726544442, MPA1:0.7539053396313068, MIoU1:0.6647147171920862, FWIoU1:0.8776107924551599
+2021-10-20 14:30:14,457 - root - INFO - 
+validating one epoch...
+2021-10-20 14:31:19,612 - root - INFO - 
+Epoch:51.000,  PA1:0.717, MPA1:0.460, MIoU1:0.345, FWIoU1:0.599, PC:0.615
+2021-10-20 14:31:19,614 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:31:19,614 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:31:19,614 - root - INFO - Training one epoch...
+2021-10-20 14:36:12,249 - root - INFO - 
+Epoch:52, train PA1:0.9322622367398499, MPA1:0.7684243001875074, MIoU1:0.6827008452379761, FWIoU1:0.8789257052750555
+2021-10-20 14:36:12,252 - root - INFO - 
+validating one epoch...
+2021-10-20 14:37:17,366 - root - INFO - 
+Epoch:52.000,  PA1:0.841, MPA1:0.479, MIoU1:0.375, FWIoU1:0.739, PC:0.626
+2021-10-20 14:37:17,368 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:37:17,368 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:37:17,369 - root - INFO - Training one epoch...
+2021-10-20 14:42:10,128 - root - INFO - 
+Epoch:53, train PA1:0.9336277222067192, MPA1:0.7497801656448444, MIoU1:0.6630274606506518, FWIoU1:0.8811005897858397
+2021-10-20 14:42:10,130 - root - INFO - 
+validating one epoch...
+2021-10-20 14:43:15,429 - root - INFO - 
+Epoch:53.000,  PA1:0.833, MPA1:0.479, MIoU1:0.357, FWIoU1:0.736, PC:0.588
+2021-10-20 14:43:15,431 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:43:15,431 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:43:15,431 - root - INFO - Training one epoch...
+2021-10-20 14:48:07,827 - root - INFO - 
+Epoch:54, train PA1:0.9324767718708742, MPA1:0.7574518014494876, MIoU1:0.6682372725934806, FWIoU1:0.8789369583512046
+2021-10-20 14:48:07,829 - root - INFO - 
+validating one epoch...
+2021-10-20 14:49:13,057 - root - INFO - 
+Epoch:54.000,  PA1:0.716, MPA1:0.454, MIoU1:0.318, FWIoU1:0.615, PC:0.625
+2021-10-20 14:49:13,058 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:49:13,058 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:49:13,059 - root - INFO - Training one epoch...
+2021-10-20 14:54:06,132 - root - INFO - 
+Epoch:55, train PA1:0.932648024391547, MPA1:0.770185264776577, MIoU1:0.6797112682197358, FWIoU1:0.8794394159368523
+2021-10-20 14:54:06,135 - root - INFO - 
+validating one epoch...
+2021-10-20 14:55:11,400 - root - INFO - 
+Epoch:55.000,  PA1:0.776, MPA1:0.474, MIoU1:0.349, FWIoU1:0.674, PC:0.647
+2021-10-20 14:55:11,402 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 14:55:11,402 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 14:55:11,402 - root - INFO - Training one epoch...
+2021-10-20 15:00:03,846 - root - INFO - 
+Epoch:56, train PA1:0.9355706419562794, MPA1:0.7526743427586727, MIoU1:0.6654279061844375, FWIoU1:0.8842727863563753
+2021-10-20 15:00:03,849 - root - INFO - 
+validating one epoch...
+2021-10-20 15:01:09,149 - root - INFO - 
+Epoch:56.000,  PA1:0.757, MPA1:0.481, MIoU1:0.355, FWIoU1:0.653, PC:0.622
+2021-10-20 15:01:09,150 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:01:09,150 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:01:09,151 - root - INFO - Training one epoch...
+2021-10-20 15:06:01,850 - root - INFO - 
+Epoch:57, train PA1:0.9302795311606701, MPA1:0.7528529283721482, MIoU1:0.6659702888810841, FWIoU1:0.8758630238235134
+2021-10-20 15:06:01,853 - root - INFO - 
+validating one epoch...
+2021-10-20 15:07:07,041 - root - INFO - 
+Epoch:57.000,  PA1:0.843, MPA1:0.488, MIoU1:0.370, FWIoU1:0.748, PC:0.609
+2021-10-20 15:07:07,043 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:07:07,043 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:07:07,043 - root - INFO - Training one epoch...
+2021-10-20 15:11:59,580 - root - INFO - 
+Epoch:58, train PA1:0.9331000579466193, MPA1:0.768489063984212, MIoU1:0.6834819762670286, FWIoU1:0.8799385431515738
+2021-10-20 15:11:59,583 - root - INFO - 
+validating one epoch...
+2021-10-20 15:13:04,810 - root - INFO - 
+Epoch:58.000,  PA1:0.763, MPA1:0.484, MIoU1:0.357, FWIoU1:0.662, PC:0.631
+2021-10-20 15:13:04,811 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:13:04,811 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:13:04,812 - root - INFO - Training one epoch...
+2021-10-20 15:17:57,951 - root - INFO - 
+Epoch:59, train PA1:0.9339915607911004, MPA1:0.7782780345848542, MIoU1:0.6891454970592009, FWIoU1:0.8816630900392174
+2021-10-20 15:17:57,953 - root - INFO - 
+validating one epoch...
+2021-10-20 15:19:03,292 - root - INFO - 
+Epoch:59.000,  PA1:0.781, MPA1:0.487, MIoU1:0.372, FWIoU1:0.684, PC:0.575
+2021-10-20 15:19:03,297 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:19:03,297 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:19:03,297 - root - INFO - Training one epoch...
+2021-10-20 15:23:55,875 - root - INFO - 
+Epoch:60, train PA1:0.9339318800320462, MPA1:0.7752738141780489, MIoU1:0.6842127284453243, FWIoU1:0.8812343024321764
+2021-10-20 15:23:55,878 - root - INFO - 
+validating one epoch...
+2021-10-20 15:25:01,008 - root - INFO - 
+Epoch:60.000,  PA1:0.812, MPA1:0.487, MIoU1:0.373, FWIoU1:0.714, PC:0.599
+2021-10-20 15:25:01,010 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:25:01,010 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:25:01,011 - root - INFO - Training one epoch...
+2021-10-20 15:29:54,026 - root - INFO - 
+Epoch:61, train PA1:0.9351231196817497, MPA1:0.7728485986148427, MIoU1:0.6886965984870476, FWIoU1:0.8833423064476823
+2021-10-20 15:29:54,029 - root - INFO - 
+validating one epoch...
+2021-10-20 15:30:59,277 - root - INFO - 
+Epoch:61.000,  PA1:0.750, MPA1:0.498, MIoU1:0.346, FWIoU1:0.652, PC:0.554
+2021-10-20 15:30:59,279 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:30:59,279 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:30:59,280 - root - INFO - Training one epoch...
+2021-10-20 15:35:52,291 - root - INFO - 
+Epoch:62, train PA1:0.9369414058961888, MPA1:0.784249142840884, MIoU1:0.6987817741431196, FWIoU1:0.8865726502934559
+2021-10-20 15:35:52,293 - root - INFO - 
+validating one epoch...
+2021-10-20 15:36:57,383 - root - INFO - 
+Epoch:62.000,  PA1:0.745, MPA1:0.487, MIoU1:0.365, FWIoU1:0.642, PC:0.632
+2021-10-20 15:36:57,384 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:36:57,384 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:36:57,385 - root - INFO - Training one epoch...
+2021-10-20 15:41:50,176 - root - INFO - 
+Epoch:63, train PA1:0.9310301668910507, MPA1:0.7762378271499478, MIoU1:0.6854197553821558, FWIoU1:0.876804662697372
+2021-10-20 15:41:50,179 - root - INFO - 
+validating one epoch...
+2021-10-20 15:42:55,289 - root - INFO - 
+Epoch:63.000,  PA1:0.776, MPA1:0.488, MIoU1:0.367, FWIoU1:0.679, PC:0.602
+2021-10-20 15:42:55,291 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:42:55,291 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:42:55,291 - root - INFO - Training one epoch...
+2021-10-20 15:47:48,033 - root - INFO - 
+Epoch:64, train PA1:0.932707688662317, MPA1:0.7667875990954496, MIoU1:0.6796382748382557, FWIoU1:0.8793457426040565
+2021-10-20 15:47:48,036 - root - INFO - 
+validating one epoch...
+2021-10-20 15:48:53,465 - root - INFO - 
+Epoch:64.000,  PA1:0.776, MPA1:0.468, MIoU1:0.355, FWIoU1:0.669, PC:0.593
+2021-10-20 15:48:53,466 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:48:53,466 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:48:53,466 - root - INFO - Training one epoch...
+2021-10-20 15:53:46,183 - root - INFO - 
+Epoch:65, train PA1:0.9348310186193537, MPA1:0.7722092397624235, MIoU1:0.6851971421479848, FWIoU1:0.8829734880275245
+2021-10-20 15:53:46,186 - root - INFO - 
+validating one epoch...
+2021-10-20 15:54:51,438 - root - INFO - 
+Epoch:65.000,  PA1:0.808, MPA1:0.455, MIoU1:0.353, FWIoU1:0.699, PC:0.623
+2021-10-20 15:54:51,442 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 15:54:51,442 - root - INFO - => The best MIoU of val is 0.3758584156183597 at 42000
+2021-10-20 15:54:51,443 - root - INFO - Training one epoch...
+2021-10-20 15:59:44,545 - root - INFO - 
+Epoch:66, train PA1:0.9365911843958488, MPA1:0.7690008898300507, MIoU1:0.6848609938088355, FWIoU1:0.8858631652612012
+2021-10-20 15:59:44,548 - root - INFO - 
+validating one epoch...
+2021-10-20 16:00:49,820 - root - INFO - 
+Epoch:66.000,  PA1:0.848, MPA1:0.499, MIoU1:0.391, FWIoU1:0.750, PC:0.637
+2021-10-20 16:00:49,821 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 16:00:51,597 - root - INFO - Training one epoch...
+2021-10-20 16:05:44,435 - root - INFO - 
+Epoch:67, train PA1:0.9375658539568382, MPA1:0.7769358003383897, MIoU1:0.6910696868253173, FWIoU1:0.8873699767614843
+2021-10-20 16:05:44,438 - root - INFO - 
+validating one epoch...
+2021-10-20 16:06:49,796 - root - INFO - 
+Epoch:67.000,  PA1:0.833, MPA1:0.459, MIoU1:0.364, FWIoU1:0.731, PC:0.628
+2021-10-20 16:06:49,798 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:06:49,798 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:06:49,798 - root - INFO - Training one epoch...
+2021-10-20 16:11:42,835 - root - INFO - 
+Epoch:68, train PA1:0.9336871524591325, MPA1:0.7852018537160556, MIoU1:0.697007861979413, FWIoU1:0.880784179748406
+2021-10-20 16:11:42,838 - root - INFO - 
+validating one epoch...
+2021-10-20 16:12:48,159 - root - INFO - 
+Epoch:68.000,  PA1:0.765, MPA1:0.463, MIoU1:0.335, FWIoU1:0.653, PC:0.587
+2021-10-20 16:12:48,161 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:12:48,161 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:12:48,161 - root - INFO - Training one epoch...
+2021-10-20 16:17:41,111 - root - INFO - 
+Epoch:69, train PA1:0.9347113787493807, MPA1:0.7711944568902924, MIoU1:0.6823249022976497, FWIoU1:0.8827165388941155
+2021-10-20 16:17:41,114 - root - INFO - 
+validating one epoch...
+2021-10-20 16:18:46,313 - root - INFO - 
+Epoch:69.000,  PA1:0.736, MPA1:0.466, MIoU1:0.349, FWIoU1:0.636, PC:0.628
+2021-10-20 16:18:46,315 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:18:46,315 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:18:46,316 - root - INFO - Training one epoch...
+2021-10-20 16:23:39,390 - root - INFO - 
+Epoch:70, train PA1:0.9356626357778742, MPA1:0.7720663380351936, MIoU1:0.6843748434881946, FWIoU1:0.8844152857137719
+2021-10-20 16:23:39,393 - root - INFO - 
+validating one epoch...
+2021-10-20 16:24:44,701 - root - INFO - 
+Epoch:70.000,  PA1:0.789, MPA1:0.470, MIoU1:0.362, FWIoU1:0.685, PC:0.647
+2021-10-20 16:24:44,703 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:24:44,703 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:24:44,703 - root - INFO - Training one epoch...
+2021-10-20 16:29:37,779 - root - INFO - 
+Epoch:71, train PA1:0.935663478513344, MPA1:0.7731583784013265, MIoU1:0.6876310508757787, FWIoU1:0.8842588043266626
+2021-10-20 16:29:37,782 - root - INFO - 
+validating one epoch...
+2021-10-20 16:30:43,048 - root - INFO - 
+Epoch:71.000,  PA1:0.752, MPA1:0.466, MIoU1:0.349, FWIoU1:0.649, PC:0.589
+2021-10-20 16:30:43,050 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:30:43,050 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:30:43,050 - root - INFO - Training one epoch...
+2021-10-20 16:35:36,122 - root - INFO - 
+Epoch:72, train PA1:0.9381577709689021, MPA1:0.7802314761971793, MIoU1:0.6939190892441847, FWIoU1:0.8886781691183656
+2021-10-20 16:35:36,125 - root - INFO - 
+validating one epoch...
+2021-10-20 16:36:41,387 - root - INFO - 
+Epoch:72.000,  PA1:0.815, MPA1:0.485, MIoU1:0.376, FWIoU1:0.711, PC:0.631
+2021-10-20 16:36:41,388 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:36:41,388 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:36:41,389 - root - INFO - Training one epoch...
+2021-10-20 16:41:34,208 - root - INFO - 
+Epoch:73, train PA1:0.9377493228990545, MPA1:0.7950659042579264, MIoU1:0.7050413629245613, FWIoU1:0.8879371079671847
+2021-10-20 16:41:34,211 - root - INFO - 
+validating one epoch...
+2021-10-20 16:42:39,484 - root - INFO - 
+Epoch:73.000,  PA1:0.731, MPA1:0.479, MIoU1:0.341, FWIoU1:0.629, PC:0.582
+2021-10-20 16:42:39,486 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:42:39,486 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:42:39,486 - root - INFO - Training one epoch...
+2021-10-20 16:47:32,575 - root - INFO - 
+Epoch:74, train PA1:0.9398783703038834, MPA1:0.792645933431941, MIoU1:0.7097274140605893, FWIoU1:0.8913526596919057
+2021-10-20 16:47:32,578 - root - INFO - 
+validating one epoch...
+2021-10-20 16:48:37,747 - root - INFO - 
+Epoch:74.000,  PA1:0.823, MPA1:0.472, MIoU1:0.373, FWIoU1:0.723, PC:0.640
+2021-10-20 16:48:37,749 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:48:37,749 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:48:37,749 - root - INFO - Training one epoch...
+2021-10-20 16:53:30,820 - root - INFO - 
+Epoch:75, train PA1:0.9382538486140024, MPA1:0.791259813959431, MIoU1:0.6990718806213062, FWIoU1:0.8886515963123118
+2021-10-20 16:53:30,823 - root - INFO - 
+validating one epoch...
+2021-10-20 16:54:36,047 - root - INFO - 
+Epoch:75.000,  PA1:0.724, MPA1:0.480, MIoU1:0.350, FWIoU1:0.614, PC:0.603
+2021-10-20 16:54:36,049 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 16:54:36,049 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 16:54:36,049 - root - INFO - Training one epoch...
+2021-10-20 16:59:29,019 - root - INFO - 
+Epoch:76, train PA1:0.942296502473683, MPA1:0.7953496694243296, MIoU1:0.7115764588802375, FWIoU1:0.8951557417737858
+2021-10-20 16:59:29,022 - root - INFO - 
+validating one epoch...
+2021-10-20 17:00:34,321 - root - INFO - 
+Epoch:76.000,  PA1:0.732, MPA1:0.472, MIoU1:0.329, FWIoU1:0.626, PC:0.580
+2021-10-20 17:00:34,324 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:00:34,324 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:00:34,325 - root - INFO - Training one epoch...
+2021-10-20 17:05:27,292 - root - INFO - 
+Epoch:77, train PA1:0.9407774958730899, MPA1:0.7877662143865178, MIoU1:0.7004678932323015, FWIoU1:0.8928525200825435
+2021-10-20 17:05:27,295 - root - INFO - 
+validating one epoch...
+2021-10-20 17:06:32,549 - root - INFO - 
+Epoch:77.000,  PA1:0.800, MPA1:0.505, MIoU1:0.378, FWIoU1:0.703, PC:0.649
+2021-10-20 17:06:32,552 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:06:32,552 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:06:32,552 - root - INFO - Training one epoch...
+2021-10-20 17:11:25,886 - root - INFO - 
+Epoch:78, train PA1:0.9419090346896695, MPA1:0.7832055557503903, MIoU1:0.701065638195262, FWIoU1:0.8947123379884193
+2021-10-20 17:11:25,889 - root - INFO - 
+validating one epoch...
+2021-10-20 17:12:31,166 - root - INFO - 
+Epoch:78.000,  PA1:0.751, MPA1:0.485, MIoU1:0.361, FWIoU1:0.650, PC:0.602
+2021-10-20 17:12:31,167 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:12:31,167 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:12:31,167 - root - INFO - Training one epoch...
+2021-10-20 17:17:24,075 - root - INFO - 
+Epoch:79, train PA1:0.9408758815195345, MPA1:0.7847920500957993, MIoU1:0.6994688469611109, FWIoU1:0.8930392641025291
+2021-10-20 17:17:24,078 - root - INFO - 
+validating one epoch...
+2021-10-20 17:18:29,357 - root - INFO - 
+Epoch:79.000,  PA1:0.767, MPA1:0.484, MIoU1:0.356, FWIoU1:0.665, PC:0.563
+2021-10-20 17:18:29,357 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:18:29,357 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:18:29,357 - root - INFO - Training one epoch...
+2021-10-20 17:23:22,421 - root - INFO - 
+Epoch:80, train PA1:0.9385627144783777, MPA1:0.7876236036403708, MIoU1:0.6995763319771452, FWIoU1:0.8889149208154414
+2021-10-20 17:23:22,424 - root - INFO - 
+validating one epoch...
+2021-10-20 17:24:27,604 - root - INFO - 
+Epoch:80.000,  PA1:0.826, MPA1:0.473, MIoU1:0.367, FWIoU1:0.720, PC:0.602
+2021-10-20 17:24:27,606 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:24:27,606 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:24:27,606 - root - INFO - Training one epoch...
+2021-10-20 17:29:20,632 - root - INFO - 
+Epoch:81, train PA1:0.9409108951424673, MPA1:0.809234855983499, MIoU1:0.7236343738641756, FWIoU1:0.8930017499595082
+2021-10-20 17:29:20,635 - root - INFO - 
+validating one epoch...
+2021-10-20 17:30:25,766 - root - INFO - 
+Epoch:81.000,  PA1:0.782, MPA1:0.479, MIoU1:0.348, FWIoU1:0.671, PC:0.610
+2021-10-20 17:30:25,768 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:30:25,768 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:30:25,768 - root - INFO - Training one epoch...
+2021-10-20 17:35:19,109 - root - INFO - 
+Epoch:82, train PA1:0.9400631019386292, MPA1:0.7931874248327252, MIoU1:0.7059027387543744, FWIoU1:0.8917490182311655
+2021-10-20 17:35:19,112 - root - INFO - 
+validating one epoch...
+2021-10-20 17:36:24,369 - root - INFO - 
+Epoch:82.000,  PA1:0.773, MPA1:0.453, MIoU1:0.342, FWIoU1:0.659, PC:0.597
+2021-10-20 17:36:24,371 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:36:24,371 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:36:24,371 - root - INFO - Training one epoch...
+2021-10-20 17:41:17,098 - root - INFO - 
+Epoch:83, train PA1:0.9375566733072839, MPA1:0.7904030718334611, MIoU1:0.7091951202406338, FWIoU1:0.8871260882940613
+2021-10-20 17:41:17,101 - root - INFO - 
+validating one epoch...
+2021-10-20 17:42:22,268 - root - INFO - 
+Epoch:83.000,  PA1:0.784, MPA1:0.485, MIoU1:0.357, FWIoU1:0.678, PC:0.620
+2021-10-20 17:42:22,270 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:42:22,270 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:42:22,270 - root - INFO - Training one epoch...
+2021-10-20 17:47:15,551 - root - INFO - 
+Epoch:84, train PA1:0.9396519703160565, MPA1:0.7923403391226465, MIoU1:0.7057314935398029, FWIoU1:0.8909601401774639
+2021-10-20 17:47:15,554 - root - INFO - 
+validating one epoch...
+2021-10-20 17:48:20,922 - root - INFO - 
+Epoch:84.000,  PA1:0.844, MPA1:0.495, MIoU1:0.386, FWIoU1:0.751, PC:0.600
+2021-10-20 17:48:20,926 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:48:20,926 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:48:20,927 - root - INFO - Training one epoch...
+2021-10-20 17:53:14,261 - root - INFO - 
+Epoch:85, train PA1:0.9428844663374533, MPA1:0.7986357374782832, MIoU1:0.7146129127699165, FWIoU1:0.8962542125316749
+2021-10-20 17:53:14,264 - root - INFO - 
+validating one epoch...
+2021-10-20 17:54:19,551 - root - INFO - 
+Epoch:85.000,  PA1:0.719, MPA1:0.467, MIoU1:0.333, FWIoU1:0.605, PC:0.608
+2021-10-20 17:54:19,553 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 17:54:19,553 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 17:54:19,553 - root - INFO - Training one epoch...
+2021-10-20 17:59:12,382 - root - INFO - 
+Epoch:86, train PA1:0.9380392307692638, MPA1:0.8015758247666667, MIoU1:0.7129842897275157, FWIoU1:0.8879535975329957
+2021-10-20 17:59:12,385 - root - INFO - 
+validating one epoch...
+2021-10-20 18:00:17,718 - root - INFO - 
+Epoch:86.000,  PA1:0.727, MPA1:0.483, MIoU1:0.339, FWIoU1:0.610, PC:0.591
+2021-10-20 18:00:17,722 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:00:17,722 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:00:17,723 - root - INFO - Training one epoch...
+2021-10-20 18:05:10,931 - root - INFO - 
+Epoch:87, train PA1:0.9411850810358994, MPA1:0.7945824006147026, MIoU1:0.708050786098507, FWIoU1:0.8932429247806173
+2021-10-20 18:05:10,934 - root - INFO - 
+validating one epoch...
+2021-10-20 18:06:16,259 - root - INFO - 
+Epoch:87.000,  PA1:0.786, MPA1:0.495, MIoU1:0.378, FWIoU1:0.687, PC:0.658
+2021-10-20 18:06:16,261 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:06:16,261 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:06:16,261 - root - INFO - Training one epoch...
+2021-10-20 18:11:09,340 - root - INFO - 
+Epoch:88, train PA1:0.9407492790354619, MPA1:0.7921383310353844, MIoU1:0.7111098423099382, FWIoU1:0.8924924217957492
+2021-10-20 18:11:09,342 - root - INFO - 
+validating one epoch...
+2021-10-20 18:12:14,626 - root - INFO - 
+Epoch:88.000,  PA1:0.746, MPA1:0.487, MIoU1:0.364, FWIoU1:0.648, PC:0.596
+2021-10-20 18:12:14,628 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:12:14,628 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:12:14,629 - root - INFO - Training one epoch...
+2021-10-20 18:17:07,687 - root - INFO - 
+Epoch:89, train PA1:0.9412523021297314, MPA1:0.8075722564304421, MIoU1:0.7231136675976144, FWIoU1:0.8936250275567743
+2021-10-20 18:17:07,690 - root - INFO - 
+validating one epoch...
+2021-10-20 18:18:12,885 - root - INFO - 
+Epoch:89.000,  PA1:0.825, MPA1:0.510, MIoU1:0.377, FWIoU1:0.726, PC:0.616
+2021-10-20 18:18:12,887 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:18:12,887 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:18:12,887 - root - INFO - Training one epoch...
+2021-10-20 18:23:05,903 - root - INFO - 
+Epoch:90, train PA1:0.94326412045213, MPA1:0.8075899841623626, MIoU1:0.719923869604302, FWIoU1:0.8970351965561716
+2021-10-20 18:23:05,906 - root - INFO - 
+validating one epoch...
+2021-10-20 18:24:11,223 - root - INFO - 
+Epoch:90.000,  PA1:0.745, MPA1:0.490, MIoU1:0.363, FWIoU1:0.642, PC:0.572
+2021-10-20 18:24:11,225 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:24:11,225 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:24:11,228 - root - INFO - Training one epoch...
+2021-10-20 18:29:04,192 - root - INFO - 
+Epoch:91, train PA1:0.9429439716498159, MPA1:0.8175755590043067, MIoU1:0.7313608326005908, FWIoU1:0.89651146376584
+2021-10-20 18:29:04,195 - root - INFO - 
+validating one epoch...
+2021-10-20 18:30:09,455 - root - INFO - 
+Epoch:91.000,  PA1:0.812, MPA1:0.494, MIoU1:0.369, FWIoU1:0.701, PC:0.603
+2021-10-20 18:30:09,456 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:30:09,457 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:30:09,457 - root - INFO - Training one epoch...
+2021-10-20 18:35:02,328 - root - INFO - 
+Epoch:92, train PA1:0.9408537997283537, MPA1:0.8043864294914215, MIoU1:0.718818729016409, FWIoU1:0.8928795259012471
+2021-10-20 18:35:02,331 - root - INFO - 
+validating one epoch...
+2021-10-20 18:36:07,616 - root - INFO - 
+Epoch:92.000,  PA1:0.824, MPA1:0.507, MIoU1:0.388, FWIoU1:0.731, PC:0.634
+2021-10-20 18:36:07,617 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:36:07,617 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:36:07,617 - root - INFO - Training one epoch...
+2021-10-20 18:41:00,942 - root - INFO - 
+Epoch:93, train PA1:0.943048498472069, MPA1:0.8118147888730523, MIoU1:0.7246870945665634, FWIoU1:0.8968875206473116
+2021-10-20 18:41:00,945 - root - INFO - 
+validating one epoch...
+2021-10-20 18:42:06,234 - root - INFO - 
+Epoch:93.000,  PA1:0.784, MPA1:0.487, MIoU1:0.377, FWIoU1:0.688, PC:0.631
+2021-10-20 18:42:06,237 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:42:06,237 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:42:06,237 - root - INFO - Training one epoch...
+2021-10-20 18:46:59,305 - root - INFO - 
+Epoch:94, train PA1:0.9422832199809867, MPA1:0.8127951881279912, MIoU1:0.7271879480363639, FWIoU1:0.8952784928058426
+2021-10-20 18:46:59,308 - root - INFO - 
+validating one epoch...
+2021-10-20 18:48:04,630 - root - INFO - 
+Epoch:94.000,  PA1:0.841, MPA1:0.479, MIoU1:0.384, FWIoU1:0.743, PC:0.629
+2021-10-20 18:48:04,631 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:48:04,631 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:48:04,632 - root - INFO - Training one epoch...
+2021-10-20 18:52:57,503 - root - INFO - 
+Epoch:95, train PA1:0.9438465831265604, MPA1:0.8052921624481267, MIoU1:0.7204557753680488, FWIoU1:0.8979188221419745
+2021-10-20 18:52:57,506 - root - INFO - 
+validating one epoch...
+2021-10-20 18:54:02,906 - root - INFO - 
+Epoch:95.000,  PA1:0.735, MPA1:0.476, MIoU1:0.352, FWIoU1:0.635, PC:0.592
+2021-10-20 18:54:02,910 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 18:54:02,910 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 18:54:02,910 - root - INFO - Training one epoch...
+2021-10-20 18:58:55,717 - root - INFO - 
+Epoch:96, train PA1:0.9435986723349746, MPA1:0.8130048400506551, MIoU1:0.7285162922574288, FWIoU1:0.8976532090789069
+2021-10-20 18:58:55,720 - root - INFO - 
+validating one epoch...
+2021-10-20 19:00:01,059 - root - INFO - 
+Epoch:96.000,  PA1:0.733, MPA1:0.493, MIoU1:0.360, FWIoU1:0.635, PC:0.584
+2021-10-20 19:00:01,061 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:00:01,061 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 19:00:01,064 - root - INFO - Training one epoch...
+2021-10-20 19:04:54,070 - root - INFO - 
+Epoch:97, train PA1:0.9408892790582607, MPA1:0.8023109551988264, MIoU1:0.7161901837936122, FWIoU1:0.8928006207360784
+2021-10-20 19:04:54,073 - root - INFO - 
+validating one epoch...
+2021-10-20 19:05:59,387 - root - INFO - 
+Epoch:97.000,  PA1:0.821, MPA1:0.494, MIoU1:0.377, FWIoU1:0.725, PC:0.642
+2021-10-20 19:05:59,389 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:05:59,391 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 19:05:59,392 - root - INFO - Training one epoch...
+2021-10-20 19:10:52,374 - root - INFO - 
+Epoch:98, train PA1:0.9455961502383543, MPA1:0.8262267932581141, MIoU1:0.7419642066673436, FWIoU1:0.9009398747308538
+2021-10-20 19:10:52,377 - root - INFO - 
+validating one epoch...
+2021-10-20 19:11:57,601 - root - INFO - 
+Epoch:98.000,  PA1:0.843, MPA1:0.481, MIoU1:0.379, FWIoU1:0.749, PC:0.644
+2021-10-20 19:11:57,603 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:11:57,603 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 19:11:57,603 - root - INFO - Training one epoch...
+2021-10-20 19:16:50,610 - root - INFO - 
+Epoch:99, train PA1:0.9426864722747837, MPA1:0.803762627676309, MIoU1:0.7171283751496117, FWIoU1:0.8960255325359514
+2021-10-20 19:16:50,613 - root - INFO - 
+validating one epoch...
+2021-10-20 19:17:55,972 - root - INFO - 
+Epoch:99.000,  PA1:0.827, MPA1:0.495, MIoU1:0.387, FWIoU1:0.730, PC:0.635
+2021-10-20 19:17:55,974 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:17:55,974 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 19:17:55,974 - root - INFO - Training one epoch...
+2021-10-20 19:22:48,876 - root - INFO - 
+Epoch:100, train PA1:0.9434516798354863, MPA1:0.8172445799276438, MIoU1:0.7301200633976127, FWIoU1:0.8974682970355509
+2021-10-20 19:22:48,878 - root - INFO - 
+validating one epoch...
+2021-10-20 19:23:54,107 - root - INFO - 
+Epoch:100.000,  PA1:0.770, MPA1:0.486, MIoU1:0.373, FWIoU1:0.658, PC:0.636
+2021-10-20 19:23:54,111 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:23:54,112 - root - INFO - => The best MIoU of val is 0.39116141211819716 at 67000
+2021-10-20 19:23:54,112 - root - INFO - Training one epoch...
+2021-10-20 19:28:46,867 - root - INFO - 
+Epoch:101, train PA1:0.9430205364087964, MPA1:0.8153409341755017, MIoU1:0.7282675782007804, FWIoU1:0.8963260141171133
+2021-10-20 19:28:46,869 - root - INFO - 
+validating one epoch...
+2021-10-20 19:29:52,112 - root - INFO - 
+Epoch:101.000,  PA1:0.858, MPA1:0.497, MIoU1:0.391, FWIoU1:0.768, PC:0.653
+2021-10-20 19:29:52,114 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 19:29:53,837 - root - INFO - Training one epoch...
+2021-10-20 19:34:46,858 - root - INFO - 
+Epoch:102, train PA1:0.9431738823703555, MPA1:0.8115591582278385, MIoU1:0.7267394456924193, FWIoU1:0.8967929364544774
+2021-10-20 19:34:46,861 - root - INFO - 
+validating one epoch...
+2021-10-20 19:35:52,194 - root - INFO - 
+Epoch:102.000,  PA1:0.759, MPA1:0.470, MIoU1:0.352, FWIoU1:0.654, PC:0.647
+2021-10-20 19:35:52,195 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:35:52,195 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 19:35:52,196 - root - INFO - Training one epoch...
+2021-10-20 19:40:45,200 - root - INFO - 
+Epoch:103, train PA1:0.9460924747921625, MPA1:0.8118630042519089, MIoU1:0.733303680910286, FWIoU1:0.9019126744990118
+2021-10-20 19:40:45,203 - root - INFO - 
+validating one epoch...
+2021-10-20 19:41:50,462 - root - INFO - 
+Epoch:103.000,  PA1:0.854, MPA1:0.481, MIoU1:0.388, FWIoU1:0.750, PC:0.666
+2021-10-20 19:41:50,464 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:41:50,464 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 19:41:50,464 - root - INFO - Training one epoch...
+2021-10-20 19:46:43,184 - root - INFO - 
+Epoch:104, train PA1:0.9477911601264807, MPA1:0.8211170781120721, MIoU1:0.7392327485144566, FWIoU1:0.9048395005365689
+2021-10-20 19:46:43,187 - root - INFO - 
+validating one epoch...
+2021-10-20 19:47:48,450 - root - INFO - 
+Epoch:104.000,  PA1:0.819, MPA1:0.476, MIoU1:0.373, FWIoU1:0.721, PC:0.630
+2021-10-20 19:47:48,452 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:47:48,452 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 19:47:48,452 - root - INFO - Training one epoch...
+2021-10-20 19:52:41,298 - root - INFO - 
+Epoch:105, train PA1:0.9445591759010112, MPA1:0.805914802658526, MIoU1:0.7215007844687452, FWIoU1:0.899164761107332
+2021-10-20 19:52:41,301 - root - INFO - 
+validating one epoch...
+2021-10-20 19:53:46,555 - root - INFO - 
+Epoch:105.000,  PA1:0.716, MPA1:0.520, MIoU1:0.383, FWIoU1:0.617, PC:0.614
+2021-10-20 19:53:46,557 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:53:46,557 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 19:53:46,557 - root - INFO - Training one epoch...
+2021-10-20 19:58:39,298 - root - INFO - 
+Epoch:106, train PA1:0.9445934239319047, MPA1:0.8180669478238215, MIoU1:0.7329573855148821, FWIoU1:0.8989931550635794
+2021-10-20 19:58:39,301 - root - INFO - 
+validating one epoch...
+2021-10-20 19:59:44,424 - root - INFO - 
+Epoch:106.000,  PA1:0.754, MPA1:0.492, MIoU1:0.356, FWIoU1:0.657, PC:0.587
+2021-10-20 19:59:44,426 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 19:59:44,426 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 19:59:44,426 - root - INFO - Training one epoch...
+2021-10-20 20:04:37,255 - root - INFO - 
+Epoch:107, train PA1:0.9443038879689676, MPA1:0.8089357325097186, MIoU1:0.7199772249849837, FWIoU1:0.8986674077685791
+2021-10-20 20:04:37,259 - root - INFO - 
+validating one epoch...
+2021-10-20 20:05:42,589 - root - INFO - 
+Epoch:107.000,  PA1:0.829, MPA1:0.496, MIoU1:0.373, FWIoU1:0.725, PC:0.576
+2021-10-20 20:05:42,591 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:05:42,591 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:05:42,591 - root - INFO - Training one epoch...
+2021-10-20 20:10:35,574 - root - INFO - 
+Epoch:108, train PA1:0.9456876885625175, MPA1:0.8023177762499775, MIoU1:0.7187235821936264, FWIoU1:0.9011800530885874
+2021-10-20 20:10:35,577 - root - INFO - 
+validating one epoch...
+2021-10-20 20:11:40,710 - root - INFO - 
+Epoch:108.000,  PA1:0.763, MPA1:0.488, MIoU1:0.368, FWIoU1:0.656, PC:0.619
+2021-10-20 20:11:40,711 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:11:40,711 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:11:40,714 - root - INFO - Training one epoch...
+2021-10-20 20:16:33,577 - root - INFO - 
+Epoch:109, train PA1:0.9466073416099654, MPA1:0.8128677858802253, MIoU1:0.730651870621596, FWIoU1:0.9026501663903022
+2021-10-20 20:16:33,580 - root - INFO - 
+validating one epoch...
+2021-10-20 20:17:38,937 - root - INFO - 
+Epoch:109.000,  PA1:0.751, MPA1:0.487, MIoU1:0.373, FWIoU1:0.649, PC:0.641
+2021-10-20 20:17:38,938 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:17:38,939 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:17:38,939 - root - INFO - Training one epoch...
+2021-10-20 20:22:31,705 - root - INFO - 
+Epoch:110, train PA1:0.9446213712562392, MPA1:0.8158635026115982, MIoU1:0.731208754708003, FWIoU1:0.8991101334865907
+2021-10-20 20:22:31,708 - root - INFO - 
+validating one epoch...
+2021-10-20 20:23:37,104 - root - INFO - 
+Epoch:110.000,  PA1:0.837, MPA1:0.507, MIoU1:0.388, FWIoU1:0.740, PC:0.622
+2021-10-20 20:23:37,106 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:23:37,106 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:23:37,106 - root - INFO - Training one epoch...
+2021-10-20 20:28:29,947 - root - INFO - 
+Epoch:111, train PA1:0.945157926618262, MPA1:0.8104734782142244, MIoU1:0.7311082106280503, FWIoU1:0.9003336028576262
+2021-10-20 20:28:29,950 - root - INFO - 
+validating one epoch...
+2021-10-20 20:29:35,141 - root - INFO - 
+Epoch:111.000,  PA1:0.758, MPA1:0.513, MIoU1:0.375, FWIoU1:0.652, PC:0.609
+2021-10-20 20:29:35,143 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:29:35,143 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:29:35,143 - root - INFO - Training one epoch...
+2021-10-20 20:34:28,110 - root - INFO - 
+Epoch:112, train PA1:0.9464542114705423, MPA1:0.8305951177512164, MIoU1:0.7480525934438403, FWIoU1:0.9024252189041885
+2021-10-20 20:34:28,113 - root - INFO - 
+validating one epoch...
+2021-10-20 20:35:33,273 - root - INFO - 
+Epoch:112.000,  PA1:0.774, MPA1:0.493, MIoU1:0.369, FWIoU1:0.673, PC:0.626
+2021-10-20 20:35:33,274 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:35:33,274 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:35:33,275 - root - INFO - Training one epoch...
+2021-10-20 20:40:26,079 - root - INFO - 
+Epoch:113, train PA1:0.9456864810264973, MPA1:0.8153616501409443, MIoU1:0.7311361588531988, FWIoU1:0.9010418602123146
+2021-10-20 20:40:26,081 - root - INFO - 
+validating one epoch...
+2021-10-20 20:41:31,318 - root - INFO - 
+Epoch:113.000,  PA1:0.821, MPA1:0.488, MIoU1:0.376, FWIoU1:0.714, PC:0.578
+2021-10-20 20:41:31,319 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:41:31,320 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:41:31,320 - root - INFO - Training one epoch...
+2021-10-20 20:46:24,198 - root - INFO - 
+Epoch:114, train PA1:0.9468359067321743, MPA1:0.8314319532091521, MIoU1:0.7462076605498834, FWIoU1:0.9030906841898679
+2021-10-20 20:46:24,201 - root - INFO - 
+validating one epoch...
+2021-10-20 20:47:29,504 - root - INFO - 
+Epoch:114.000,  PA1:0.802, MPA1:0.476, MIoU1:0.372, FWIoU1:0.701, PC:0.641
+2021-10-20 20:47:29,506 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:47:29,506 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:47:29,506 - root - INFO - Training one epoch...
+2021-10-20 20:52:22,584 - root - INFO - 
+Epoch:115, train PA1:0.9461873811409068, MPA1:0.8379302949576802, MIoU1:0.7539264229635647, FWIoU1:0.9016343042574256
+2021-10-20 20:52:22,586 - root - INFO - 
+validating one epoch...
+2021-10-20 20:53:27,782 - root - INFO - 
+Epoch:115.000,  PA1:0.803, MPA1:0.480, MIoU1:0.378, FWIoU1:0.703, PC:0.650
+2021-10-20 20:53:27,784 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:53:27,784 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:53:27,784 - root - INFO - Training one epoch...
+2021-10-20 20:58:20,754 - root - INFO - 
+Epoch:116, train PA1:0.9458372081099006, MPA1:0.8166691864102623, MIoU1:0.7340725767524907, FWIoU1:0.9011715809789428
+2021-10-20 20:58:20,757 - root - INFO - 
+validating one epoch...
+2021-10-20 20:59:25,952 - root - INFO - 
+Epoch:116.000,  PA1:0.827, MPA1:0.496, MIoU1:0.376, FWIoU1:0.733, PC:0.630
+2021-10-20 20:59:25,953 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 20:59:25,953 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 20:59:25,953 - root - INFO - Training one epoch...
+2021-10-20 21:04:19,004 - root - INFO - 
+Epoch:117, train PA1:0.9471393538696208, MPA1:0.8311930369779823, MIoU1:0.7495938407424325, FWIoU1:0.9033474160688231
+2021-10-20 21:04:19,007 - root - INFO - 
+validating one epoch...
+2021-10-20 21:05:24,246 - root - INFO - 
+Epoch:117.000,  PA1:0.751, MPA1:0.494, MIoU1:0.374, FWIoU1:0.653, PC:0.662
+2021-10-20 21:05:24,248 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:05:24,248 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:05:24,248 - root - INFO - Training one epoch...
+2021-10-20 21:10:16,775 - root - INFO - 
+Epoch:118, train PA1:0.9468988634666913, MPA1:0.8084008717826419, MIoU1:0.7263864823819767, FWIoU1:0.9028426927748151
+2021-10-20 21:10:16,778 - root - INFO - 
+validating one epoch...
+2021-10-20 21:11:22,059 - root - INFO - 
+Epoch:118.000,  PA1:0.732, MPA1:0.510, MIoU1:0.376, FWIoU1:0.636, PC:0.627
+2021-10-20 21:11:22,061 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:11:22,061 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:11:22,061 - root - INFO - Training one epoch...
+2021-10-20 21:16:14,963 - root - INFO - 
+Epoch:119, train PA1:0.9466131798296187, MPA1:0.8201664517135507, MIoU1:0.7402071057939426, FWIoU1:0.9024593675275132
+2021-10-20 21:16:14,965 - root - INFO - 
+validating one epoch...
+2021-10-20 21:17:20,188 - root - INFO - 
+Epoch:119.000,  PA1:0.848, MPA1:0.489, MIoU1:0.388, FWIoU1:0.754, PC:0.657
+2021-10-20 21:17:20,189 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:17:20,190 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:17:20,190 - root - INFO - Training one epoch...
+2021-10-20 21:22:13,049 - root - INFO - 
+Epoch:120, train PA1:0.9487319582633991, MPA1:0.8369344943369655, MIoU1:0.7501525810822679, FWIoU1:0.9062370659391644
+2021-10-20 21:22:13,052 - root - INFO - 
+validating one epoch...
+2021-10-20 21:23:18,321 - root - INFO - 
+Epoch:120.000,  PA1:0.808, MPA1:0.511, MIoU1:0.387, FWIoU1:0.712, PC:0.611
+2021-10-20 21:23:18,322 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:23:18,322 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:23:18,323 - root - INFO - Training one epoch...
+2021-10-20 21:28:11,381 - root - INFO - 
+Epoch:121, train PA1:0.9490770372934886, MPA1:0.8275831677580573, MIoU1:0.7431247720417624, FWIoU1:0.9066628638691533
+2021-10-20 21:28:11,384 - root - INFO - 
+validating one epoch...
+2021-10-20 21:29:16,758 - root - INFO - 
+Epoch:121.000,  PA1:0.783, MPA1:0.472, MIoU1:0.370, FWIoU1:0.670, PC:0.661
+2021-10-20 21:29:16,760 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:29:16,760 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:29:16,760 - root - INFO - Training one epoch...
+2021-10-20 21:34:09,564 - root - INFO - 
+Epoch:122, train PA1:0.9462601492991133, MPA1:0.8262558153792259, MIoU1:0.7444936036411812, FWIoU1:0.9018774021461867
+2021-10-20 21:34:09,567 - root - INFO - 
+validating one epoch...
+2021-10-20 21:35:14,779 - root - INFO - 
+Epoch:122.000,  PA1:0.758, MPA1:0.511, MIoU1:0.388, FWIoU1:0.666, PC:0.629
+2021-10-20 21:35:14,783 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:35:14,783 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:35:14,783 - root - INFO - Training one epoch...
+2021-10-20 21:40:07,510 - root - INFO - 
+Epoch:123, train PA1:0.9488745186681191, MPA1:0.8117804241156493, MIoU1:0.7324227326579392, FWIoU1:0.9065764429683881
+2021-10-20 21:40:07,513 - root - INFO - 
+validating one epoch...
+2021-10-20 21:41:12,757 - root - INFO - 
+Epoch:123.000,  PA1:0.740, MPA1:0.474, MIoU1:0.365, FWIoU1:0.640, PC:0.600
+2021-10-20 21:41:12,759 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:41:12,759 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:41:12,759 - root - INFO - Training one epoch...
+2021-10-20 21:46:05,652 - root - INFO - 
+Epoch:124, train PA1:0.9484090415267868, MPA1:0.829279093471226, MIoU1:0.7475828106493387, FWIoU1:0.905717564550786
+2021-10-20 21:46:05,655 - root - INFO - 
+validating one epoch...
+2021-10-20 21:47:10,910 - root - INFO - 
+Epoch:124.000,  PA1:0.796, MPA1:0.505, MIoU1:0.384, FWIoU1:0.694, PC:0.625
+2021-10-20 21:47:10,911 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:47:10,911 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:47:10,912 - root - INFO - Training one epoch...
+2021-10-20 21:52:03,675 - root - INFO - 
+Epoch:125, train PA1:0.948056478944698, MPA1:0.8217994511940593, MIoU1:0.7403523371903165, FWIoU1:0.9050665275028115
+2021-10-20 21:52:03,678 - root - INFO - 
+validating one epoch...
+2021-10-20 21:53:08,962 - root - INFO - 
+Epoch:125.000,  PA1:0.804, MPA1:0.501, MIoU1:0.377, FWIoU1:0.705, PC:0.634
+2021-10-20 21:53:08,964 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:53:08,964 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:53:08,964 - root - INFO - Training one epoch...
+2021-10-20 21:58:01,660 - root - INFO - 
+Epoch:126, train PA1:0.9484488554841558, MPA1:0.8354314411458711, MIoU1:0.7552065312696877, FWIoU1:0.9058031504400106
+2021-10-20 21:58:01,663 - root - INFO - 
+validating one epoch...
+2021-10-20 21:59:06,825 - root - INFO - 
+Epoch:126.000,  PA1:0.799, MPA1:0.483, MIoU1:0.381, FWIoU1:0.699, PC:0.660
+2021-10-20 21:59:06,826 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 21:59:06,827 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 21:59:06,827 - root - INFO - Training one epoch...
+2021-10-20 22:03:59,661 - root - INFO - 
+Epoch:127, train PA1:0.9498848150221065, MPA1:0.8250211504645149, MIoU1:0.7466243077852335, FWIoU1:0.9082574204842657
+2021-10-20 22:03:59,664 - root - INFO - 
+validating one epoch...
+2021-10-20 22:05:04,863 - root - INFO - 
+Epoch:127.000,  PA1:0.797, MPA1:0.483, MIoU1:0.375, FWIoU1:0.696, PC:0.637
+2021-10-20 22:05:04,867 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:05:04,867 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:05:04,867 - root - INFO - Training one epoch...
+2021-10-20 22:09:57,508 - root - INFO - 
+Epoch:128, train PA1:0.9481396516949002, MPA1:0.8229479979816396, MIoU1:0.7378476932276444, FWIoU1:0.9052317224611275
+2021-10-20 22:09:57,511 - root - INFO - 
+validating one epoch...
+2021-10-20 22:11:02,793 - root - INFO - 
+Epoch:128.000,  PA1:0.831, MPA1:0.504, MIoU1:0.388, FWIoU1:0.728, PC:0.637
+2021-10-20 22:11:02,795 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:11:02,797 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:11:02,798 - root - INFO - Training one epoch...
+2021-10-20 22:15:55,569 - root - INFO - 
+Epoch:129, train PA1:0.9491193467008425, MPA1:0.8368563587966126, MIoU1:0.7530718454133146, FWIoU1:0.9067611208145662
+2021-10-20 22:15:55,572 - root - INFO - 
+validating one epoch...
+2021-10-20 22:17:00,880 - root - INFO - 
+Epoch:129.000,  PA1:0.776, MPA1:0.495, MIoU1:0.369, FWIoU1:0.671, PC:0.621
+2021-10-20 22:17:00,881 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:17:00,881 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:17:00,882 - root - INFO - Training one epoch...
+2021-10-20 22:21:53,677 - root - INFO - 
+Epoch:130, train PA1:0.9506359807717789, MPA1:0.8373566161067526, MIoU1:0.757089405270269, FWIoU1:0.909524129404738
+2021-10-20 22:21:53,680 - root - INFO - 
+validating one epoch...
+2021-10-20 22:22:58,937 - root - INFO - 
+Epoch:130.000,  PA1:0.744, MPA1:0.498, MIoU1:0.379, FWIoU1:0.645, PC:0.586
+2021-10-20 22:22:58,939 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:22:58,939 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:22:58,939 - root - INFO - Training one epoch...
+2021-10-20 22:27:51,458 - root - INFO - 
+Epoch:131, train PA1:0.951248551102952, MPA1:0.8412654931782941, MIoU1:0.757991908470191, FWIoU1:0.9105679388997068
+2021-10-20 22:27:51,460 - root - INFO - 
+validating one epoch...
+2021-10-20 22:28:56,704 - root - INFO - 
+Epoch:131.000,  PA1:0.725, MPA1:0.463, MIoU1:0.336, FWIoU1:0.620, PC:0.603
+2021-10-20 22:28:56,706 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:28:56,706 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:28:56,707 - root - INFO - Training one epoch...
+2021-10-20 22:33:49,705 - root - INFO - 
+Epoch:132, train PA1:0.9495168154678764, MPA1:0.8301819868778022, MIoU1:0.7510611163325052, FWIoU1:0.9076804699874701
+2021-10-20 22:33:49,708 - root - INFO - 
+validating one epoch...
+2021-10-20 22:34:55,031 - root - INFO - 
+Epoch:132.000,  PA1:0.748, MPA1:0.493, MIoU1:0.375, FWIoU1:0.651, PC:0.622
+2021-10-20 22:34:55,035 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:34:55,035 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:34:55,036 - root - INFO - Training one epoch...
+2021-10-20 22:39:47,887 - root - INFO - 
+Epoch:133, train PA1:0.9496697707714026, MPA1:0.824747719095436, MIoU1:0.7467873114452095, FWIoU1:0.9078244723737582
+2021-10-20 22:39:47,889 - root - INFO - 
+validating one epoch...
+2021-10-20 22:40:53,157 - root - INFO - 
+Epoch:133.000,  PA1:0.709, MPA1:0.490, MIoU1:0.351, FWIoU1:0.598, PC:0.600
+2021-10-20 22:40:53,158 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:40:53,159 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:40:53,159 - root - INFO - Training one epoch...
+2021-10-20 22:45:45,775 - root - INFO - 
+Epoch:134, train PA1:0.9493028548317466, MPA1:0.8470419505565954, MIoU1:0.763153845955827, FWIoU1:0.9071691879818489
+2021-10-20 22:45:45,777 - root - INFO - 
+validating one epoch...
+2021-10-20 22:46:51,091 - root - INFO - 
+Epoch:134.000,  PA1:0.776, MPA1:0.496, MIoU1:0.380, FWIoU1:0.678, PC:0.640
+2021-10-20 22:46:51,093 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:46:51,093 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:46:51,093 - root - INFO - Training one epoch...
+2021-10-20 22:51:43,927 - root - INFO - 
+Epoch:135, train PA1:0.9508014591141396, MPA1:0.8301289603983161, MIoU1:0.7512383621963242, FWIoU1:0.9099310434471489
+2021-10-20 22:51:43,930 - root - INFO - 
+validating one epoch...
+2021-10-20 22:52:49,193 - root - INFO - 
+Epoch:135.000,  PA1:0.762, MPA1:0.508, MIoU1:0.384, FWIoU1:0.666, PC:0.628
+2021-10-20 22:52:49,195 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 22:52:49,195 - root - INFO - => The best MIoU of val is 0.39144282929593965 at 102000
+2021-10-20 22:52:49,197 - root - INFO - Training one epoch...
+2021-10-20 22:57:42,003 - root - INFO - 
+Epoch:136, train PA1:0.9524963323737531, MPA1:0.8415124363387498, MIoU1:0.7596352228625033, FWIoU1:0.9127535309145336
+2021-10-20 22:57:42,007 - root - INFO - 
+validating one epoch...
+2021-10-20 22:58:47,343 - root - INFO - 
+Epoch:136.000,  PA1:0.831, MPA1:0.510, MIoU1:0.395, FWIoU1:0.735, PC:0.630
+2021-10-20 22:58:47,347 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 22:58:49,099 - root - INFO - Training one epoch...
+2021-10-20 23:03:41,808 - root - INFO - 
+Epoch:137, train PA1:0.9510394739747801, MPA1:0.8372921511018844, MIoU1:0.7544833353914984, FWIoU1:0.9102222137261291
+2021-10-20 23:03:41,811 - root - INFO - 
+validating one epoch...
+2021-10-20 23:04:47,018 - root - INFO - 
+Epoch:137.000,  PA1:0.844, MPA1:0.499, MIoU1:0.392, FWIoU1:0.752, PC:0.640
+2021-10-20 23:04:47,020 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:04:47,020 - root - INFO - => The best MIoU of val is 0.39469766217944147 at 137000
+2021-10-20 23:04:47,021 - root - INFO - Training one epoch...
+2021-10-20 23:09:39,627 - root - INFO - 
+Epoch:138, train PA1:0.9494220926717515, MPA1:0.8360729014290768, MIoU1:0.7513428477978465, FWIoU1:0.907330050415523
+2021-10-20 23:09:39,630 - root - INFO - 
+validating one epoch...
+2021-10-20 23:10:44,975 - root - INFO - 
+Epoch:138.000,  PA1:0.842, MPA1:0.494, MIoU1:0.391, FWIoU1:0.742, PC:0.619
+2021-10-20 23:10:44,977 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:10:44,977 - root - INFO - => The best MIoU of val is 0.39469766217944147 at 137000
+2021-10-20 23:10:44,977 - root - INFO - Training one epoch...
+2021-10-20 23:15:37,601 - root - INFO - 
+Epoch:139, train PA1:0.95211346117501, MPA1:0.8427418992712844, MIoU1:0.7583533622761024, FWIoU1:0.9122553983823591
+2021-10-20 23:15:37,604 - root - INFO - 
+validating one epoch...
+2021-10-20 23:16:42,888 - root - INFO - 
+Epoch:139.000,  PA1:0.819, MPA1:0.501, MIoU1:0.393, FWIoU1:0.721, PC:0.625
+2021-10-20 23:16:42,890 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:16:42,890 - root - INFO - => The best MIoU of val is 0.39469766217944147 at 137000
+2021-10-20 23:16:42,890 - root - INFO - Training one epoch...
+2021-10-20 23:21:35,594 - root - INFO - 
+Epoch:140, train PA1:0.9515333507713956, MPA1:0.8440161609330503, MIoU1:0.7624757832689021, FWIoU1:0.9109911130206636
+2021-10-20 23:21:35,597 - root - INFO - 
+validating one epoch...
+2021-10-20 23:22:40,865 - root - INFO - 
+Epoch:140.000,  PA1:0.702, MPA1:0.500, MIoU1:0.367, FWIoU1:0.598, PC:0.614
+2021-10-20 23:22:40,866 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:22:40,866 - root - INFO - => The best MIoU of val is 0.39469766217944147 at 137000
+2021-10-20 23:22:40,866 - root - INFO - Training one epoch...
+2021-10-20 23:27:33,690 - root - INFO - 
+Epoch:141, train PA1:0.9502279006447599, MPA1:0.8399695827880453, MIoU1:0.757640400251944, FWIoU1:0.9085894170620787
+2021-10-20 23:27:33,693 - root - INFO - 
+validating one epoch...
+2021-10-20 23:28:38,922 - root - INFO - 
+Epoch:141.000,  PA1:0.822, MPA1:0.499, MIoU1:0.384, FWIoU1:0.726, PC:0.646
+2021-10-20 23:28:38,924 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:28:38,925 - root - INFO - => The best MIoU of val is 0.39469766217944147 at 137000
+2021-10-20 23:28:38,925 - root - INFO - Training one epoch...
+2021-10-20 23:33:31,803 - root - INFO - 
+Epoch:142, train PA1:0.9522898693371239, MPA1:0.8450983000526185, MIoU1:0.7661917795938735, FWIoU1:0.9123821214763236
+2021-10-20 23:33:31,806 - root - INFO - 
+validating one epoch...
+2021-10-20 23:34:37,049 - root - INFO - 
+Epoch:142.000,  PA1:0.756, MPA1:0.467, MIoU1:0.366, FWIoU1:0.655, PC:0.648
+2021-10-20 23:34:37,050 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:34:37,050 - root - INFO - => The best MIoU of val is 0.39469766217944147 at 137000
+2021-10-20 23:34:37,053 - root - INFO - Training one epoch...
+2021-10-20 23:39:29,980 - root - INFO - 
+Epoch:143, train PA1:0.9511077536778811, MPA1:0.841721660616721, MIoU1:0.76162846392781, FWIoU1:0.9103476135356854
+2021-10-20 23:39:29,983 - root - INFO - 
+validating one epoch...
+2021-10-20 23:40:35,249 - root - INFO - 
+Epoch:143.000,  PA1:0.843, MPA1:0.509, MIoU1:0.401, FWIoU1:0.750, PC:0.632
+2021-10-20 23:40:35,249 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 23:40:36,992 - root - INFO - Training one epoch...
+2021-10-20 23:45:29,777 - root - INFO - 
+Epoch:144, train PA1:0.9497162974231349, MPA1:0.8442082198238158, MIoU1:0.759467504422641, FWIoU1:0.9076178633295413
+2021-10-20 23:45:29,780 - root - INFO - 
+validating one epoch...
+2021-10-20 23:46:35,177 - root - INFO - 
+Epoch:144.000,  PA1:0.777, MPA1:0.484, MIoU1:0.362, FWIoU1:0.677, PC:0.631
+2021-10-20 23:46:35,179 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:46:35,179 - root - INFO - => The best MIoU of val is 0.4008641418745647 at 144000
+2021-10-20 23:46:35,179 - root - INFO - Training one epoch...
+2021-10-20 23:51:27,497 - root - INFO - 
+Epoch:145, train PA1:0.9508460662644583, MPA1:0.8444451220469399, MIoU1:0.7679859866270494, FWIoU1:0.9097233641067431
+2021-10-20 23:51:27,500 - root - INFO - 
+validating one epoch...
+2021-10-20 23:52:32,761 - root - INFO - 
+Epoch:145.000,  PA1:0.749, MPA1:0.497, MIoU1:0.369, FWIoU1:0.649, PC:0.615
+2021-10-20 23:52:32,762 - root - INFO - => The MIoU of val does't improve.
+2021-10-20 23:52:32,763 - root - INFO - => The best MIoU of val is 0.4008641418745647 at 144000
+2021-10-20 23:52:32,763 - root - INFO - Training one epoch...
+2021-10-20 23:57:25,393 - root - INFO - 
+Epoch:146, train PA1:0.9530802380310808, MPA1:0.8445838733693766, MIoU1:0.7669578502136871, FWIoU1:0.9136010309837598
+2021-10-20 23:57:25,396 - root - INFO - 
+validating one epoch...
+2021-10-20 23:58:30,667 - root - INFO - 
+Epoch:146.000,  PA1:0.836, MPA1:0.525, MIoU1:0.401, FWIoU1:0.735, PC:0.634
+2021-10-20 23:58:30,669 - root - INFO - =>saving a new best checkpoint...
+2021-10-20 23:58:32,375 - root - INFO - Training one epoch...
+2021-10-21 00:03:25,196 - root - INFO - 
+Epoch:147, train PA1:0.9534187751019839, MPA1:0.8487867677370944, MIoU1:0.7666624547329919, FWIoU1:0.9144197534836944
+2021-10-21 00:03:25,199 - root - INFO - 
+validating one epoch...
+2021-10-21 00:04:30,480 - root - INFO - 
+Epoch:147.000,  PA1:0.727, MPA1:0.491, MIoU1:0.367, FWIoU1:0.627, PC:0.622
+2021-10-21 00:04:30,482 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:04:30,482 - root - INFO - => The best MIoU of val is 0.40106959562931227 at 147000
+2021-10-21 00:04:30,482 - root - INFO - Training one epoch...
+2021-10-21 00:09:23,249 - root - INFO - 
+Epoch:148, train PA1:0.9549251357434216, MPA1:0.8530800344504349, MIoU1:0.7725890513334912, FWIoU1:0.9169498741039385
+2021-10-21 00:09:23,252 - root - INFO - 
+validating one epoch...
+2021-10-21 00:10:28,511 - root - INFO - 
+Epoch:148.000,  PA1:0.726, MPA1:0.490, MIoU1:0.367, FWIoU1:0.627, PC:0.640
+2021-10-21 00:10:28,513 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:10:28,513 - root - INFO - => The best MIoU of val is 0.40106959562931227 at 147000
+2021-10-21 00:10:28,513 - root - INFO - Training one epoch...
+2021-10-21 00:15:21,239 - root - INFO - 
+Epoch:149, train PA1:0.9530881655149164, MPA1:0.8427820075099172, MIoU1:0.7665896024408579, FWIoU1:0.9137827719766485
+2021-10-21 00:15:21,242 - root - INFO - 
+validating one epoch...
+2021-10-21 00:16:26,533 - root - INFO - 
+Epoch:149.000,  PA1:0.857, MPA1:0.473, MIoU1:0.382, FWIoU1:0.757, PC:0.671
+2021-10-21 00:16:26,535 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:16:26,535 - root - INFO - => The best MIoU of val is 0.40106959562931227 at 147000
+2021-10-21 00:16:26,535 - root - INFO - Training one epoch...
+2021-10-21 00:21:19,012 - root - INFO - 
+Epoch:150, train PA1:0.952977144459428, MPA1:0.8499569003327015, MIoU1:0.7670832601834838, FWIoU1:0.9135549604409275
+2021-10-21 00:21:19,014 - root - INFO - 
+validating one epoch...
+2021-10-21 00:22:24,252 - root - INFO - 
+Epoch:150.000,  PA1:0.833, MPA1:0.504, MIoU1:0.403, FWIoU1:0.741, PC:0.648
+2021-10-21 00:22:24,253 - root - INFO - =>saving a new best checkpoint...
+2021-10-21 00:22:25,909 - root - INFO - Training one epoch...
+2021-10-21 00:27:18,241 - root - INFO - 
+Epoch:151, train PA1:0.9543343283145668, MPA1:0.8530233498039714, MIoU1:0.7762752402753893, FWIoU1:0.9158420260334685
+2021-10-21 00:27:18,244 - root - INFO - 
+validating one epoch...
+2021-10-21 00:28:23,569 - root - INFO - 
+Epoch:151.000,  PA1:0.833, MPA1:0.503, MIoU1:0.388, FWIoU1:0.734, PC:0.625
+2021-10-21 00:28:23,571 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:28:23,571 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 00:28:23,571 - root - INFO - Training one epoch...
+2021-10-21 00:33:16,179 - root - INFO - 
+Epoch:152, train PA1:0.9536162288554377, MPA1:0.8552857926978856, MIoU1:0.7754788065248681, FWIoU1:0.9147335690438088
+2021-10-21 00:33:16,182 - root - INFO - 
+validating one epoch...
+2021-10-21 00:34:21,406 - root - INFO - 
+Epoch:152.000,  PA1:0.852, MPA1:0.489, MIoU1:0.397, FWIoU1:0.758, PC:0.676
+2021-10-21 00:34:21,408 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:34:21,408 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 00:34:21,409 - root - INFO - Training one epoch...
+2021-10-21 00:39:14,212 - root - INFO - 
+Epoch:153, train PA1:0.9538434181216833, MPA1:0.8379031967752235, MIoU1:0.7565370118292054, FWIoU1:0.9150279773433071
+2021-10-21 00:39:14,214 - root - INFO - 
+validating one epoch...
+2021-10-21 00:40:19,508 - root - INFO - 
+Epoch:153.000,  PA1:0.824, MPA1:0.490, MIoU1:0.386, FWIoU1:0.725, PC:0.647
+2021-10-21 00:40:19,512 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:40:19,512 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 00:40:19,513 - root - INFO - Training one epoch...
+2021-10-21 00:45:12,124 - root - INFO - 
+Epoch:154, train PA1:0.955485317338243, MPA1:0.8428332937828312, MIoU1:0.766997221756488, FWIoU1:0.9179543638954726
+2021-10-21 00:45:12,126 - root - INFO - 
+validating one epoch...
+2021-10-21 00:46:17,395 - root - INFO - 
+Epoch:154.000,  PA1:0.733, MPA1:0.496, MIoU1:0.371, FWIoU1:0.634, PC:0.633
+2021-10-21 00:46:17,397 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:46:17,397 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 00:46:17,397 - root - INFO - Training one epoch...
+2021-10-21 00:51:09,791 - root - INFO - 
+Epoch:155, train PA1:0.9539373270225192, MPA1:0.8358483829821388, MIoU1:0.7555995220833226, FWIoU1:0.9153229709778916
+2021-10-21 00:51:09,794 - root - INFO - 
+validating one epoch...
+2021-10-21 00:52:14,956 - root - INFO - 
+Epoch:155.000,  PA1:0.782, MPA1:0.497, MIoU1:0.378, FWIoU1:0.685, PC:0.603
+2021-10-21 00:52:14,958 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:52:14,958 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 00:52:14,958 - root - INFO - Training one epoch...
+2021-10-21 00:57:07,934 - root - INFO - 
+Epoch:156, train PA1:0.9543597716760522, MPA1:0.8526780176859411, MIoU1:0.773568709010446, FWIoU1:0.9159083820511285
+2021-10-21 00:57:07,937 - root - INFO - 
+validating one epoch...
+2021-10-21 00:58:13,155 - root - INFO - 
+Epoch:156.000,  PA1:0.805, MPA1:0.494, MIoU1:0.384, FWIoU1:0.709, PC:0.643
+2021-10-21 00:58:13,157 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 00:58:13,157 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 00:58:13,157 - root - INFO - Training one epoch...
+2021-10-21 01:03:05,659 - root - INFO - 
+Epoch:157, train PA1:0.955569684071321, MPA1:0.8500719836940583, MIoU1:0.7734450424968068, FWIoU1:0.9179840353830139
+2021-10-21 01:03:05,662 - root - INFO - 
+validating one epoch...
+2021-10-21 01:04:10,827 - root - INFO - 
+Epoch:157.000,  PA1:0.805, MPA1:0.499, MIoU1:0.391, FWIoU1:0.710, PC:0.655
+2021-10-21 01:04:10,831 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:04:10,831 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:04:10,832 - root - INFO - Training one epoch...
+2021-10-21 01:09:03,637 - root - INFO - 
+Epoch:158, train PA1:0.9544462207170838, MPA1:0.8510875825711485, MIoU1:0.7737088110923801, FWIoU1:0.916071220372308
+2021-10-21 01:09:03,640 - root - INFO - 
+validating one epoch...
+2021-10-21 01:10:08,865 - root - INFO - 
+Epoch:158.000,  PA1:0.752, MPA1:0.507, MIoU1:0.387, FWIoU1:0.656, PC:0.638
+2021-10-21 01:10:08,866 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:10:08,866 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:10:08,867 - root - INFO - Training one epoch...
+2021-10-21 01:15:01,403 - root - INFO - 
+Epoch:159, train PA1:0.9546198424472919, MPA1:0.8539154317706051, MIoU1:0.7734789062337977, FWIoU1:0.91643201566514
+2021-10-21 01:15:01,406 - root - INFO - 
+validating one epoch...
+2021-10-21 01:16:06,768 - root - INFO - 
+Epoch:159.000,  PA1:0.828, MPA1:0.509, MIoU1:0.396, FWIoU1:0.736, PC:0.612
+2021-10-21 01:16:06,770 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:16:06,770 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:16:06,774 - root - INFO - Training one epoch...
+2021-10-21 01:20:59,219 - root - INFO - 
+Epoch:160, train PA1:0.9543116966759344, MPA1:0.8483477207132744, MIoU1:0.7720357647535823, FWIoU1:0.9156940003172198
+2021-10-21 01:20:59,221 - root - INFO - 
+validating one epoch...
+2021-10-21 01:22:04,480 - root - INFO - 
+Epoch:160.000,  PA1:0.765, MPA1:0.496, MIoU1:0.375, FWIoU1:0.663, PC:0.632
+2021-10-21 01:22:04,481 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:22:04,481 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:22:04,481 - root - INFO - Training one epoch...
+2021-10-21 01:26:57,408 - root - INFO - 
+Epoch:161, train PA1:0.9553733955241235, MPA1:0.8576261339092677, MIoU1:0.7824701289062107, FWIoU1:0.9177135209206165
+2021-10-21 01:26:57,412 - root - INFO - 
+validating one epoch...
+2021-10-21 01:28:02,738 - root - INFO - 
+Epoch:161.000,  PA1:0.790, MPA1:0.503, MIoU1:0.388, FWIoU1:0.694, PC:0.637
+2021-10-21 01:28:02,742 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:28:02,742 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:28:02,742 - root - INFO - Training one epoch...
+2021-10-21 01:32:55,195 - root - INFO - 
+Epoch:162, train PA1:0.9551104798082201, MPA1:0.845928871582856, MIoU1:0.7664742844284825, FWIoU1:0.9171654008146011
+2021-10-21 01:32:55,198 - root - INFO - 
+validating one epoch...
+2021-10-21 01:34:00,298 - root - INFO - 
+Epoch:162.000,  PA1:0.749, MPA1:0.507, MIoU1:0.382, FWIoU1:0.650, PC:0.622
+2021-10-21 01:34:00,301 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:34:00,302 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:34:00,302 - root - INFO - Training one epoch...
+2021-10-21 01:38:53,143 - root - INFO - 
+Epoch:163, train PA1:0.9555195920800058, MPA1:0.8489779931315028, MIoU1:0.7731326038652518, FWIoU1:0.9178727265776665
+2021-10-21 01:38:53,146 - root - INFO - 
+validating one epoch...
+2021-10-21 01:39:58,357 - root - INFO - 
+Epoch:163.000,  PA1:0.746, MPA1:0.517, MIoU1:0.380, FWIoU1:0.650, PC:0.586
+2021-10-21 01:39:58,358 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:39:58,358 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:39:58,359 - root - INFO - Training one epoch...
+2021-10-21 01:44:51,190 - root - INFO - 
+Epoch:164, train PA1:0.9534276142042166, MPA1:0.8530133701321403, MIoU1:0.7698380676938412, FWIoU1:0.9142405917231209
+2021-10-21 01:44:51,193 - root - INFO - 
+validating one epoch...
+2021-10-21 01:45:56,464 - root - INFO - 
+Epoch:164.000,  PA1:0.774, MPA1:0.505, MIoU1:0.382, FWIoU1:0.677, PC:0.634
+2021-10-21 01:45:56,466 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:45:56,466 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:45:56,466 - root - INFO - Training one epoch...
+2021-10-21 01:50:49,338 - root - INFO - 
+Epoch:165, train PA1:0.954865538704421, MPA1:0.8465000882609118, MIoU1:0.7689014107594072, FWIoU1:0.9168476170768233
+2021-10-21 01:50:49,341 - root - INFO - 
+validating one epoch...
+2021-10-21 01:51:54,711 - root - INFO - 
+Epoch:165.000,  PA1:0.813, MPA1:0.490, MIoU1:0.381, FWIoU1:0.718, PC:0.624
+2021-10-21 01:51:54,712 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:51:54,712 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:51:54,712 - root - INFO - Training one epoch...
+2021-10-21 01:56:47,408 - root - INFO - 
+Epoch:166, train PA1:0.9557561915856961, MPA1:0.8474588468649419, MIoU1:0.76810967235891, FWIoU1:0.9183329149567406
+2021-10-21 01:56:47,411 - root - INFO - 
+validating one epoch...
+2021-10-21 01:57:52,571 - root - INFO - 
+Epoch:166.000,  PA1:0.840, MPA1:0.472, MIoU1:0.380, FWIoU1:0.745, PC:0.663
+2021-10-21 01:57:52,573 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 01:57:52,573 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 01:57:52,573 - root - INFO - Training one epoch...
+2021-10-21 02:02:45,281 - root - INFO - 
+Epoch:167, train PA1:0.9565759020712366, MPA1:0.8522712123157227, MIoU1:0.7735878271435342, FWIoU1:0.9197627558838257
+2021-10-21 02:02:45,284 - root - INFO - 
+validating one epoch...
+2021-10-21 02:03:50,550 - root - INFO - 
+Epoch:167.000,  PA1:0.778, MPA1:0.493, MIoU1:0.380, FWIoU1:0.677, PC:0.639
+2021-10-21 02:03:50,552 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:03:50,552 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 02:03:50,552 - root - INFO - Training one epoch...
+2021-10-21 02:08:43,553 - root - INFO - 
+Epoch:168, train PA1:0.9557120949100067, MPA1:0.8584733417231435, MIoU1:0.7825057218370238, FWIoU1:0.918156452344735
+2021-10-21 02:08:43,556 - root - INFO - 
+validating one epoch...
+2021-10-21 02:09:48,842 - root - INFO - 
+Epoch:168.000,  PA1:0.783, MPA1:0.491, MIoU1:0.382, FWIoU1:0.687, PC:0.651
+2021-10-21 02:09:48,844 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:09:48,844 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 02:09:48,845 - root - INFO - Training one epoch...
+2021-10-21 02:14:41,494 - root - INFO - 
+Epoch:169, train PA1:0.9557445589105021, MPA1:0.8498031166221155, MIoU1:0.7733938054869356, FWIoU1:0.9182999564057895
+2021-10-21 02:14:41,497 - root - INFO - 
+validating one epoch...
+2021-10-21 02:15:46,721 - root - INFO - 
+Epoch:169.000,  PA1:0.787, MPA1:0.496, MIoU1:0.382, FWIoU1:0.693, PC:0.644
+2021-10-21 02:15:46,723 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:15:46,723 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 02:15:46,723 - root - INFO - Training one epoch...
+2021-10-21 02:20:39,320 - root - INFO - 
+Epoch:170, train PA1:0.9569928277361336, MPA1:0.8499032344290367, MIoU1:0.7729955533130388, FWIoU1:0.920544319406396
+2021-10-21 02:20:39,323 - root - INFO - 
+validating one epoch...
+2021-10-21 02:21:44,464 - root - INFO - 
+Epoch:170.000,  PA1:0.832, MPA1:0.499, MIoU1:0.387, FWIoU1:0.731, PC:0.621
+2021-10-21 02:21:44,465 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:21:44,465 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 02:21:44,466 - root - INFO - Training one epoch...
+2021-10-21 02:26:37,027 - root - INFO - 
+Epoch:171, train PA1:0.9570730193134922, MPA1:0.8565846801411826, MIoU1:0.775813783374781, FWIoU1:0.920709331005806
+2021-10-21 02:26:37,030 - root - INFO - 
+validating one epoch...
+2021-10-21 02:27:42,376 - root - INFO - 
+Epoch:171.000,  PA1:0.836, MPA1:0.494, MIoU1:0.395, FWIoU1:0.740, PC:0.659
+2021-10-21 02:27:42,378 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:27:42,378 - root - INFO - => The best MIoU of val is 0.4026156391800657 at 151000
+2021-10-21 02:27:42,378 - root - INFO - Training one epoch...
+2021-10-21 02:32:34,850 - root - INFO - 
+Epoch:172, train PA1:0.956490555986669, MPA1:0.8617280557494126, MIoU1:0.7847026503072535, FWIoU1:0.9195966190713436
+2021-10-21 02:32:34,853 - root - INFO - 
+validating one epoch...
+2021-10-21 02:33:40,009 - root - INFO - 
+Epoch:172.000,  PA1:0.852, MPA1:0.509, MIoU1:0.408, FWIoU1:0.759, PC:0.640
+2021-10-21 02:33:40,011 - root - INFO - =>saving a new best checkpoint...
+2021-10-21 02:33:41,763 - root - INFO - Training one epoch...
+2021-10-21 02:38:34,204 - root - INFO - 
+Epoch:173, train PA1:0.9567200956050776, MPA1:0.85790428239833, MIoU1:0.7798252152346653, FWIoU1:0.9200235133790609
+2021-10-21 02:38:34,207 - root - INFO - 
+validating one epoch...
+2021-10-21 02:39:39,364 - root - INFO - 
+Epoch:173.000,  PA1:0.848, MPA1:0.515, MIoU1:0.405, FWIoU1:0.753, PC:0.640
+2021-10-21 02:39:39,365 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:39:39,365 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 02:39:39,365 - root - INFO - Training one epoch...
+2021-10-21 02:44:31,689 - root - INFO - 
+Epoch:174, train PA1:0.9571925560809654, MPA1:0.8630909480792692, MIoU1:0.787039961054916, FWIoU1:0.9208959980664504
+2021-10-21 02:44:31,691 - root - INFO - 
+validating one epoch...
+2021-10-21 02:45:36,904 - root - INFO - 
+Epoch:174.000,  PA1:0.776, MPA1:0.498, MIoU1:0.384, FWIoU1:0.681, PC:0.642
+2021-10-21 02:45:36,906 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:45:36,906 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 02:45:36,906 - root - INFO - Training one epoch...
+2021-10-21 02:50:29,875 - root - INFO - 
+Epoch:175, train PA1:0.956624098585128, MPA1:0.861748073419192, MIoU1:0.7813047434322542, FWIoU1:0.9198367746752071
+2021-10-21 02:50:29,877 - root - INFO - 
+validating one epoch...
+2021-10-21 02:51:35,081 - root - INFO - 
+Epoch:175.000,  PA1:0.799, MPA1:0.497, MIoU1:0.386, FWIoU1:0.703, PC:0.641
+2021-10-21 02:51:35,083 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:51:35,083 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 02:51:35,083 - root - INFO - Training one epoch...
+2021-10-21 02:56:27,660 - root - INFO - 
+Epoch:176, train PA1:0.9565266801359836, MPA1:0.8671561800833977, MIoU1:0.7888794717106484, FWIoU1:0.9196002265674705
+2021-10-21 02:56:27,663 - root - INFO - 
+validating one epoch...
+2021-10-21 02:57:32,916 - root - INFO - 
+Epoch:176.000,  PA1:0.797, MPA1:0.495, MIoU1:0.387, FWIoU1:0.703, PC:0.643
+2021-10-21 02:57:32,918 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 02:57:32,918 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 02:57:32,918 - root - INFO - Training one epoch...
+2021-10-21 03:02:25,289 - root - INFO - 
+Epoch:177, train PA1:0.957278256002677, MPA1:0.8575589266345411, MIoU1:0.7792868318307239, FWIoU1:0.9210512372986006
+2021-10-21 03:02:25,291 - root - INFO - 
+validating one epoch...
+2021-10-21 03:03:30,407 - root - INFO - 
+Epoch:177.000,  PA1:0.800, MPA1:0.487, MIoU1:0.381, FWIoU1:0.703, PC:0.654
+2021-10-21 03:03:30,408 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:03:30,408 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:03:30,411 - root - INFO - Training one epoch...
+2021-10-21 03:08:22,741 - root - INFO - 
+Epoch:178, train PA1:0.957524363708998, MPA1:0.8572560850208655, MIoU1:0.7786792478635626, FWIoU1:0.9213930061609297
+2021-10-21 03:08:22,744 - root - INFO - 
+validating one epoch...
+2021-10-21 03:09:28,053 - root - INFO - 
+Epoch:178.000,  PA1:0.790, MPA1:0.495, MIoU1:0.388, FWIoU1:0.695, PC:0.649
+2021-10-21 03:09:28,055 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:09:28,055 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:09:28,056 - root - INFO - Training one epoch...
+2021-10-21 03:14:20,620 - root - INFO - 
+Epoch:179, train PA1:0.9578533460107714, MPA1:0.8612277519634303, MIoU1:0.7821384557720501, FWIoU1:0.9220213944106895
+2021-10-21 03:14:20,622 - root - INFO - 
+validating one epoch...
+2021-10-21 03:15:25,703 - root - INFO - 
+Epoch:179.000,  PA1:0.864, MPA1:0.492, MIoU1:0.399, FWIoU1:0.768, PC:0.672
+2021-10-21 03:15:25,704 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:15:25,704 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:15:25,704 - root - INFO - Training one epoch...
+2021-10-21 03:20:18,416 - root - INFO - 
+Epoch:180, train PA1:0.9581849065915342, MPA1:0.8566605521553251, MIoU1:0.7791968691895342, FWIoU1:0.9228318153455737
+2021-10-21 03:20:18,418 - root - INFO - 
+validating one epoch...
+2021-10-21 03:21:23,665 - root - INFO - 
+Epoch:180.000,  PA1:0.850, MPA1:0.476, MIoU1:0.386, FWIoU1:0.753, PC:0.664
+2021-10-21 03:21:23,666 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:21:23,666 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:21:23,667 - root - INFO - Training one epoch...
+2021-10-21 03:26:15,954 - root - INFO - 
+Epoch:181, train PA1:0.9584165724333661, MPA1:0.8679190076453153, MIoU1:0.7946890179939583, FWIoU1:0.9229924529800819
+2021-10-21 03:26:15,956 - root - INFO - 
+validating one epoch...
+2021-10-21 03:27:21,076 - root - INFO - 
+Epoch:181.000,  PA1:0.819, MPA1:0.500, MIoU1:0.390, FWIoU1:0.725, PC:0.646
+2021-10-21 03:27:21,078 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:27:21,078 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:27:21,078 - root - INFO - Training one epoch...
+2021-10-21 03:32:13,776 - root - INFO - 
+Epoch:182, train PA1:0.9576974649635316, MPA1:0.8607975042878913, MIoU1:0.7848087361228959, FWIoU1:0.9217848220408357
+2021-10-21 03:32:13,778 - root - INFO - 
+validating one epoch...
+2021-10-21 03:33:19,027 - root - INFO - 
+Epoch:182.000,  PA1:0.822, MPA1:0.487, MIoU1:0.386, FWIoU1:0.726, PC:0.649
+2021-10-21 03:33:19,028 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:33:19,028 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:33:19,028 - root - INFO - Training one epoch...
+2021-10-21 03:38:11,780 - root - INFO - 
+Epoch:183, train PA1:0.9584563423722777, MPA1:0.865736807859634, MIoU1:0.7888033162453325, FWIoU1:0.9231714450793358
+2021-10-21 03:38:11,783 - root - INFO - 
+validating one epoch...
+2021-10-21 03:39:17,013 - root - INFO - 
+Epoch:183.000,  PA1:0.800, MPA1:0.499, MIoU1:0.390, FWIoU1:0.706, PC:0.648
+2021-10-21 03:39:17,015 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:39:17,015 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:39:17,015 - root - INFO - Training one epoch...
+2021-10-21 03:44:09,484 - root - INFO - 
+Epoch:184, train PA1:0.957912576909433, MPA1:0.8644209411559943, MIoU1:0.7862142097007766, FWIoU1:0.9221506155034686
+2021-10-21 03:44:09,487 - root - INFO - 
+validating one epoch...
+2021-10-21 03:45:14,691 - root - INFO - 
+Epoch:184.000,  PA1:0.802, MPA1:0.499, MIoU1:0.393, FWIoU1:0.706, PC:0.647
+2021-10-21 03:45:14,693 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:45:14,693 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:45:14,693 - root - INFO - Training one epoch...
+2021-10-21 03:50:07,177 - root - INFO - 
+Epoch:185, train PA1:0.9585242608430262, MPA1:0.8583114001787252, MIoU1:0.7847533973055005, FWIoU1:0.923264000394625
+2021-10-21 03:50:07,180 - root - INFO - 
+validating one epoch...
+2021-10-21 03:51:12,335 - root - INFO - 
+Epoch:185.000,  PA1:0.795, MPA1:0.504, MIoU1:0.385, FWIoU1:0.697, PC:0.628
+2021-10-21 03:51:12,336 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:51:12,336 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:51:12,336 - root - INFO - Training one epoch...
+2021-10-21 03:56:04,842 - root - INFO - 
+Epoch:186, train PA1:0.9585603198778028, MPA1:0.8638514170071958, MIoU1:0.7886097571685885, FWIoU1:0.9231829172571401
+2021-10-21 03:56:04,845 - root - INFO - 
+validating one epoch...
+2021-10-21 03:57:09,977 - root - INFO - 
+Epoch:186.000,  PA1:0.769, MPA1:0.495, MIoU1:0.382, FWIoU1:0.673, PC:0.643
+2021-10-21 03:57:09,979 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 03:57:09,979 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 03:57:09,979 - root - INFO - Training one epoch...
+2021-10-21 04:02:02,512 - root - INFO - 
+Epoch:187, train PA1:0.958541168118897, MPA1:0.8607551459537902, MIoU1:0.7824137156573745, FWIoU1:0.9232158857322422
+2021-10-21 04:02:02,515 - root - INFO - 
+validating one epoch...
+2021-10-21 04:03:07,824 - root - INFO - 
+Epoch:187.000,  PA1:0.826, MPA1:0.495, MIoU1:0.392, FWIoU1:0.730, PC:0.637
+2021-10-21 04:03:07,826 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:03:07,826 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:03:07,826 - root - INFO - Training one epoch...
+2021-10-21 04:08:00,614 - root - INFO - 
+Epoch:188, train PA1:0.9587435322421977, MPA1:0.8577006342443173, MIoU1:0.7792301493907001, FWIoU1:0.9235499008957936
+2021-10-21 04:08:00,616 - root - INFO - 
+validating one epoch...
+2021-10-21 04:09:05,757 - root - INFO - 
+Epoch:188.000,  PA1:0.812, MPA1:0.498, MIoU1:0.390, FWIoU1:0.719, PC:0.648
+2021-10-21 04:09:05,761 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:09:05,761 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:09:05,761 - root - INFO - Training one epoch...
+2021-10-21 04:13:58,047 - root - INFO - 
+Epoch:189, train PA1:0.9593806990567904, MPA1:0.8663704075753398, MIoU1:0.7868561322523773, FWIoU1:0.9248264927357293
+2021-10-21 04:13:58,050 - root - INFO - 
+validating one epoch...
+2021-10-21 04:15:03,262 - root - INFO - 
+Epoch:189.000,  PA1:0.810, MPA1:0.499, MIoU1:0.391, FWIoU1:0.714, PC:0.645
+2021-10-21 04:15:03,264 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:15:03,264 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:15:03,267 - root - INFO - Training one epoch...
+2021-10-21 04:19:55,443 - root - INFO - 
+Epoch:190, train PA1:0.9596174529956792, MPA1:0.8631072683404273, MIoU1:0.7901030111165422, FWIoU1:0.925173337232306
+2021-10-21 04:19:55,446 - root - INFO - 
+validating one epoch...
+2021-10-21 04:21:00,605 - root - INFO - 
+Epoch:190.000,  PA1:0.777, MPA1:0.487, MIoU1:0.382, FWIoU1:0.679, PC:0.650
+2021-10-21 04:21:00,605 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:21:00,606 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:21:00,609 - root - INFO - Training one epoch...
+2021-10-21 04:25:53,157 - root - INFO - 
+Epoch:191, train PA1:0.9587847201716665, MPA1:0.863793563017174, MIoU1:0.7812387106358901, FWIoU1:0.9235840721200648
+2021-10-21 04:25:53,159 - root - INFO - 
+validating one epoch...
+2021-10-21 04:26:58,399 - root - INFO - 
+Epoch:191.000,  PA1:0.825, MPA1:0.499, MIoU1:0.391, FWIoU1:0.731, PC:0.644
+2021-10-21 04:26:58,400 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:26:58,401 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:26:58,403 - root - INFO - Training one epoch...
+2021-10-21 04:31:50,740 - root - INFO - 
+Epoch:192, train PA1:0.9594655387642353, MPA1:0.862740364815914, MIoU1:0.785694400331344, FWIoU1:0.9248603523833822
+2021-10-21 04:31:50,742 - root - INFO - 
+validating one epoch...
+2021-10-21 04:32:55,873 - root - INFO - 
+Epoch:192.000,  PA1:0.809, MPA1:0.494, MIoU1:0.388, FWIoU1:0.714, PC:0.650
+2021-10-21 04:32:55,875 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:32:55,875 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:32:55,875 - root - INFO - Training one epoch...
+2021-10-21 04:37:48,365 - root - INFO - 
+Epoch:193, train PA1:0.9594848840856631, MPA1:0.8609097780253706, MIoU1:0.783997685350483, FWIoU1:0.9248939704553387
+2021-10-21 04:37:48,368 - root - INFO - 
+validating one epoch...
+2021-10-21 04:38:53,509 - root - INFO - 
+Epoch:193.000,  PA1:0.805, MPA1:0.500, MIoU1:0.392, FWIoU1:0.710, PC:0.652
+2021-10-21 04:38:53,511 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:38:53,511 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:38:53,511 - root - INFO - Training one epoch...
+2021-10-21 04:43:45,666 - root - INFO - 
+Epoch:194, train PA1:0.9597178925684151, MPA1:0.8671808723175878, MIoU1:0.7896063766982778, FWIoU1:0.9252817528940415
+2021-10-21 04:43:45,669 - root - INFO - 
+validating one epoch...
+2021-10-21 04:44:50,844 - root - INFO - 
+Epoch:194.000,  PA1:0.858, MPA1:0.504, MIoU1:0.406, FWIoU1:0.766, PC:0.662
+2021-10-21 04:44:50,846 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:44:50,846 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:44:50,846 - root - INFO - Training one epoch...
+2021-10-21 04:49:43,312 - root - INFO - 
+Epoch:195, train PA1:0.9596781942788254, MPA1:0.8596720934945908, MIoU1:0.7841753034230861, FWIoU1:0.9252089195437407
+2021-10-21 04:49:43,315 - root - INFO - 
+validating one epoch...
+2021-10-21 04:50:48,522 - root - INFO - 
+Epoch:195.000,  PA1:0.851, MPA1:0.504, MIoU1:0.406, FWIoU1:0.758, PC:0.657
+2021-10-21 04:50:48,523 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:50:48,523 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:50:48,523 - root - INFO - Training one epoch...
+2021-10-21 04:55:40,983 - root - INFO - 
+Epoch:196, train PA1:0.9584932402654592, MPA1:0.8676038733509756, MIoU1:0.7943274045672541, FWIoU1:0.9231197864187564
+2021-10-21 04:55:40,986 - root - INFO - 
+validating one epoch...
+2021-10-21 04:56:46,182 - root - INFO - 
+Epoch:196.000,  PA1:0.826, MPA1:0.511, MIoU1:0.402, FWIoU1:0.733, PC:0.648
+2021-10-21 04:56:46,184 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 04:56:46,184 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 04:56:46,184 - root - INFO - Training one epoch...
+2021-10-21 05:01:38,750 - root - INFO - 
+Epoch:197, train PA1:0.9590943586355744, MPA1:0.8637439675875022, MIoU1:0.7865192312692316, FWIoU1:0.9242860701579431
+2021-10-21 05:01:38,752 - root - INFO - 
+validating one epoch...
+2021-10-21 05:02:43,896 - root - INFO - 
+Epoch:197.000,  PA1:0.807, MPA1:0.496, MIoU1:0.391, FWIoU1:0.713, PC:0.652
+2021-10-21 05:02:43,897 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 05:02:43,897 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 05:02:43,898 - root - INFO - Training one epoch...
+2021-10-21 05:07:36,318 - root - INFO - 
+Epoch:198, train PA1:0.9586404755117094, MPA1:0.863480382585909, MIoU1:0.7898033286451346, FWIoU1:0.923438129316158
+2021-10-21 05:07:36,320 - root - INFO - 
+validating one epoch...
+2021-10-21 05:08:41,503 - root - INFO - 
+Epoch:198.000,  PA1:0.789, MPA1:0.492, MIoU1:0.385, FWIoU1:0.692, PC:0.647
+2021-10-21 05:08:41,504 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 05:08:41,505 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 05:08:41,505 - root - INFO - Training one epoch...
+2021-10-21 05:13:33,813 - root - INFO - 
+Epoch:199, train PA1:0.9590251896484041, MPA1:0.8670865790158823, MIoU1:0.789074389030068, FWIoU1:0.9240663282660878
+2021-10-21 05:13:33,815 - root - INFO - 
+validating one epoch...
+2021-10-21 05:14:38,950 - root - INFO - 
+Epoch:199.000,  PA1:0.850, MPA1:0.508, MIoU1:0.406, FWIoU1:0.756, PC:0.651
+2021-10-21 05:14:38,951 - root - INFO - => The MIoU of val does't improve.
+2021-10-21 05:14:38,951 - root - INFO - => The best MIoU of val is 0.4082161877579815 at 173000
+2021-10-21 05:14:38,955 - root - INFO - =>best_MIou 0.4082161877579815 at 173000
+2021-10-21 05:14:38,955 - root - INFO - =>saving the final checkpoint to ./log/gta5_pretrain_2/gta5final.pth
